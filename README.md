@@ -87,7 +87,6 @@
 ### 1.1 Antecedentes
 
 La **computación en la nube** surge como respuesta a la creciente necesidad de procesar y almacenar grandes volúmenes de datos sin depender únicamente de infraestructura local.
-![Historia de la nube](https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cloud_computing_icon.svg/512px-Cloud_computing_icon.svg.png)
 
 
  Sus raíces se remontan a los años **60**, cuando John McCarthy y otros pioneros de la informática plantearon la idea de la “**computación como servicio**”. En aquel entonces, los **mainframes** permitían compartir tiempo de procesamiento entre múltiples usuarios, un concepto precursor de lo que hoy conocemos como nube. Durante los **90**, con la expansión de **Internet**, empresas como **Salesforce** comenzaron a ofrecer aplicaciones accesibles a través de la web, eliminando la necesidad de instalar software en cada equipo. Este enfoque sentó las bases para los modelos de **Software como Servicio (SaaS)**, **Plataforma como Servicio (PaaS)** e **Infraestructura como Servicio (IaaS)**.
