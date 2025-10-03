@@ -3,6 +3,7 @@
 <!-- TOC generado: mantén un único índice limpio -->
 - [Índice](#índice)
   - [SITUACIÓN DE PARTIDA](#situación-de-partida)
+    - [Juniverse Studio](#juniverse-studio)
     - [0.1 Contexto](#01-contexto)
     - [0.2 Actores / Stakeholders](#02-actores--stakeholders)
     - [0.3 Problemática inicial](#03-problemática-inicial)
@@ -19,6 +20,8 @@
     - [1.4 Ventajas frente a la informática tradicional](#14-ventajas-frente-a-la-informática-tradicional)
     - [1.5 Desafíos y limitaciones actuales](#15-desafíos-y-limitaciones-actuales)
   - [📚 Enlaces recomendados para ampliar el tema](#-enlaces-recomendados-para-ampliar-el-tema)
+    - [Tabla síntesis — Capítulo 1](#tabla-síntesis--capítulo-1)
+    - [Tips y curiosidades — Capítulo 1](#tips-y-curiosidades--capítulo-1)
   - [2. Modelos de nube](#2-modelos-de-nube)
     - [2.1 Nube pública](#21-nube-pública)
     - [2.2 Nube privada](#22-nube-privada)
@@ -27,7 +30,11 @@
     - [2.5 Comparación entre modelos](#25-comparación-entre-modelos)
     - [Tabla decisión rápida (elige modelo)](#tabla-decisión-rápida-elige-modelo)
     - [Autoevaluación (Capítulo 2)](#autoevaluación-capítulo-2)
+    - [Tabla síntesis — Capítulo 2](#tabla-síntesis--capítulo-2)
+    - [Tips y curiosidades — Capítulo 2](#tips-y-curiosidades--capítulo-2)
   - [3. Servicios en la nube](#3-servicios-en-la-nube)
+    - [Tabla síntesis — Capítulo 3](#tabla-síntesis--capítulo-3)
+    - [Tips y curiosidades — Capítulo 3](#tips-y-curiosidades--capítulo-3)
     - [3.1 IaaS (Infraestructura como servicio)](#31-iaas-infraestructura-como-servicio)
     - [3.2 PaaS (Plataforma como servicio)](#32-paas-plataforma-como-servicio)
     - [3.3 SaaS (Software como servicio)](#33-saas-software-como-servicio)
@@ -44,6 +51,8 @@
     - [Tabla comparativa de beneficios y aplicaciones](#tabla-comparativa-de-beneficios-y-aplicaciones)
     - [Infografía: Beneficios del trabajo en la nube](#infografía-beneficios-del-trabajo-en-la-nube)
     - [Autoevaluación (Capítulo 4)](#autoevaluación-capítulo-4)
+    - [Tabla síntesis — Capítulo 4](#tabla-síntesis--capítulo-4)
+    - [Tips y curiosidades — Capítulo 4](#tips-y-curiosidades--capítulo-4)
   - [5. Edge computing](#5-edge-computing)
     - [5.1 Concepto y fundamentos](#51-concepto-y-fundamentos)
       - [Ejemplos](#ejemplos)
@@ -51,21 +60,32 @@
       - [Enlaces](#enlaces)
       - [Infografía](#infografía)
     - [5.2 Diferencias con la nube tradicional](#52-diferencias-con-la-nube-tradicional)
+    - [Tabla síntesis — Capítulo 5](#tabla-síntesis--capítulo-5)
+    - [Tips y curiosidades — Capítulo 5](#tips-y-curiosidades--capítulo-5)
       - [Ejemplos, casos y recursos](#ejemplos-casos-y-recursos)
     - [6.4 Aplicaciones prácticas](#64-aplicaciones-prácticas)
     - [6.5 Retos de implementación](#65-retos-de-implementación)
     - [6.6 Costes y retorno de la inversión (ROI)](#66-costes-y-retorno-de-la-inversión-roi)
+      - [Mini calculadora conceptual (texto)](#mini-calculadora-conceptual-texto)
+      - [Indicadores recomendados](#indicadores-recomendados)
     - [6.7 Lecturas y referencias y cierre práctico](#67-lecturas-y-referencias-y-cierre-práctico)
       - [Ejemplos, casos, enlaces y tabla resumen](#ejemplos-casos-enlaces-y-tabla-resumen)
   - [6. Fog computing y mist computing](#6-fog-computing-y-mist-computing)
+    - [Tabla síntesis — Capítulo 6](#tabla-síntesis--capítulo-6)
+    - [Tips y curiosidades — Capítulo 6](#tips-y-curiosidades--capítulo-6)
     - [6.1 Definición de fog computing](#61-definición-de-fog-computing)
     - [6.2 Definición de mist computing](#62-definición-de-mist-computing)
     - [6.3 Relación con el edge y la nube](#63-relación-con-el-edge-y-la-nube)
-      - [Infografía](#infografía-1)
+      - [Infografía — Edge→Cloud](#infografía--edgecloud)
+      - [Tabla retos vs mitigación ampliada](#tabla-retos-vs-mitigación-ampliada)
     - [5.6 Costes y retorno de la inversión (ROI)](#56-costes-y-retorno-de-la-inversión-roi)
+      - [Mini calculadora conceptual (texto)](#mini-calculadora-conceptual-texto-1)
+      - [Indicadores recomendados](#indicadores-recomendados-1)
     - [5.7 Lecturas y referencias y cierre práctico](#57-lecturas-y-referencias-y-cierre-práctico)
-      - [Ejemplos, casos, enlaces y tabla resumen](#ejemplos-casos-enlaces-y-tabla-resumen-1)
+      - [Ejemplos, casos, enlaces y tabla resumen (Cap. 5)](#ejemplos-casos-enlaces-y-tabla-resumen-cap-5)
   - [6. Fog computing y mist computing](#6-fog-computing-y-mist-computing-1)
+    - [Tabla síntesis — Capítulo 6 (continuación)](#tabla-síntesis--capítulo-6-continuación)
+    - [Tips y curiosidades — Capítulo 6 (continuación)](#tips-y-curiosidades--capítulo-6-continuación)
     - [6.1 Definición de fog computing](#61-definición-de-fog-computing-1)
     - [6.2 Definición de mist computing](#62-definición-de-mist-computing-1)
     - [6.3 Relación con el edge y la nube](#63-relación-con-el-edge-y-la-nube-1)
@@ -78,12 +98,16 @@
     - [7.3 Factores de seguridad](#73-factores-de-seguridad)
     - [7.4 Escalabilidad y flexibilidad](#74-escalabilidad-y-flexibilidad)
     - [7.5 Toma de decisiones estratégicas](#75-toma-de-decisiones-estratégicas)
+    - [Tabla síntesis — Capítulo 7](#tabla-síntesis--capítulo-7)
+    - [Tips y curiosidades — Capítulo 7](#tips-y-curiosidades--capítulo-7)
   - [8. Uso de nube y la rentabilidad de la empresa](#8-uso-de-nube-y-la-rentabilidad-de-la-empresa)
     - [8.1 Reducción de costes](#81-reducción-de-costes)
     - [8.2 Optimización de recursos humanos](#82-optimización-de-recursos-humanos)
     - [8.3 Innovación y velocidad de despliegue](#83-innovación-y-velocidad-de-despliegue)
     - [8.4 Impacto en la competitividad](#84-impacto-en-la-competitividad)
     - [8.5 Retorno de inversión (ROI)](#85-retorno-de-inversión-roi)
+    - [Tabla síntesis — Capítulo 8](#tabla-síntesis--capítulo-8)
+    - [Tips y curiosidades — Capítulo 8](#tips-y-curiosidades--capítulo-8)
   - [RETO PROFESIONAL](#reto-profesional)
     - [1. Nuestro centro en la nube (Transformación educativa)](#1-nuestro-centro-en-la-nube-transformación-educativa)
     - [2. Lleva a la nube tu negocio (Modernización PyME)](#2-lleva-a-la-nube-tu-negocio-modernización-pyme)
@@ -95,7 +119,8 @@
 ---
 
 ## SITUACIÓN DE PARTIDA
-**Juniverse Studio**
+
+### Juniverse Studio
 
 ### 0.1 Contexto
 
@@ -187,12 +212,14 @@ Estudio creativo/educativo que desarrolla pequeños proyectos multimedia y proto
 ## 1. Computación en la nube
 
 > Resumen rápido:
+>
 > - Problema: escalar sin comprar hardware.
 > - Motor: virtualización + automatización + pago por uso.
 > - Qué ofrece: cómputo, red, datos, IA bajo demanda.
 > - Modelos: IaaS → PaaS → SaaS → FaaS.
 > - Retos: seguridad, costes, dependencia proveedor, latencia.
 > - Tendencias: multicloud, híbrida, edge, FinOps, sostenibilidad.
+>
 
 **Idea clave:** La nube convierte CAPEX en OPEX y acelera experimentación.
 
@@ -233,7 +260,7 @@ A nivel histórico, la nube se ha asociado con tres hitos principales: la **virt
 La **computación en la nube** se define como la provisión de recursos informáticos —**servidores**, **almacenamiento**, **bases de datos**, **redes**, **software** y **análisis**— a través de **Internet**, permitiendo que usuarios y empresas accedan a ellos sin tener que gestionarlos físicamente. Sus características principales incluyen **elasticidad**, que permite ajustar recursos bajo demanda; **autoservicio**, que facilita el aprovisionamiento inmediato; **medición de servicios**, que permite pagar solo por lo que se utiliza; y **acceso ubicuo**, ya que los servicios están disponibles desde cualquier dispositivo conectado a **Internet**.
 
 ![Esquema de la nube](https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cloud_computing_icon.svg/512px-Cloud_computing_icon.svg.png)
-Además, la nube ofrece distintos **modelos de servicio**: **SaaS** (software como servicio), **PaaS** (plataforma como servicio) e **IaaS** (infraestructura como servicio), que cubren desde aplicaciones listas para usar hasta entornos de desarrollo y **servidores virtuales**. 
+Además, la nube ofrece distintos **modelos de servicio**: **SaaS** (software como servicio), **PaaS** (plataforma como servicio) e **IaaS** (infraestructura como servicio), que cubren desde aplicaciones listas para usar hasta entornos de desarrollo y **servidores virtuales**.
 
 La combinación de estos modelos permite a las empresas seleccionar la solución adecuada según sus necesidades y presupuesto, optimizando tanto **costes** como eficiencia operativa. La **virtualización** es clave, ya que permite ejecutar múltiples **sistemas operativos** y aplicaciones en un mismo servidor físico, reduciendo gastos de **hardware** y consumo energético.
 
@@ -286,11 +313,11 @@ Actualmente, la nube no solo se utiliza para almacenamiento y procesamiento, sin
 
 La **computación en la nube** ofrece ventajas significativas frente a la **informática tradicional**, donde las empresas debían mantener **servidores físicos**, software instalado y personal técnico especializado. La nube reduce **costes iniciales**, ya que elimina la necesidad de comprar hardware costoso y permite pagar únicamente por los recursos consumidos. Además, ofrece **escalabilidad instantánea**, algo prácticamente imposible en infraestructuras tradicionales, donde aumentar capacidad requiere adquisición y configuración de nuevos servidores.
 
-![Nube vs tradicional](images/edge-vs-cloud.svg)
+![Nube vs tradicional](https://via.placeholder.com/960x540.png?text=On-Prem+vs+Cloud)
 Otro beneficio es la **accesibilidad y colaboración**: los empleados pueden acceder a aplicaciones y datos desde cualquier dispositivo con **Internet**, facilitando el **teletrabajo** y la cooperación entre equipos globales. La nube también mejora la **resiliencia y continuidad del negocio**, al permitir copias de seguridad automáticas, recuperación ante desastres y redundancia de datos sin inversión adicional en infraestructuras físicas.
 
 
-![Comparativa nube y servidores](images/cloud-roi.svg)
+![Colaboración y accesibilidad](https://via.placeholder.com/960x540.png?text=Collaboration+%26+Accessibility)
 Además, la nube fomenta la **innovación tecnológica**, ya que facilita el acceso a herramientas avanzadas como **inteligencia artificial**, análisis de **big data**, **IoT** y **aprendizaje automático**, que serían prohibitivas en modelos tradicionales. Esto permite que empresas de todos los tamaños compitan con igualdad en términos tecnológicos, acelerando el desarrollo de productos y servicios digitales.
 
 **Ejemplos y casos reales:**
@@ -337,22 +364,38 @@ Asimismo, la nube no elimina la necesidad de **personal especializado**, especia
 
 ## 📚 Enlaces recomendados para ampliar el tema
 
-1. Computación en la nube
+- [Historia de la nube – IBM](https://www.ibm.com/cloud/learn/cloud-computing)
+- [Definición de nube – Microsoft Azure](https://learn.microsoft.com/es-es/azure/cloud-concepts/what-is-cloud-computing)
+- [Evolución de la nube – Gartner](https://www.gartner.com/en/information-technology/glossary/cloud-computing)
+- [Ventajas de la nube – Forbes](https://www.forbes.com/sites/emilsayegh/2023/11/28/how-cloud-computing-revolutionized-business-operations-and-what-lies-ahead/)
+- [Desafíos de la nube – NIST](https://www.nist.gov/news-events/news/2021/03/challenges-cloud-computing)
 
-  - [Historia de la nube – IBM](https://www.ibm.com/cloud/learn/cloud-computing)
-  - [Definición de nube – Microsoft Azure](https://learn.microsoft.com/es-es/azure/cloud-concepts/what-is-cloud-computing)
-  - [Evolución de la nube – Gartner](https://www.gartner.com/en/information-technology/glossary/cloud-computing)
-  - [Ventajas de la nube – Forbes](https://www.forbes.com/sites/emilsayegh/2023/11/28/how-cloud-computing-revolutionized-business-operations-and-what-lies-ahead/)
-  - [Desafíos de la nube – NIST](https://www.nist.gov/news-events/news/2021/03/challenges-cloud-computing)
+
+### Tabla síntesis — Capítulo 1
+
+| Aspecto | Beneficio | Riesgo | Ejemplo | Métrica sugerida |
+|---------|-----------|--------|---------|------------------|
+| Costes | Pago por uso | Sobreconsumo | Dropbox | Coste/usuario/mes |
+| Escalabilidad | Autoscaling | Cold starts | Zoom | P95 latencia |
+| Innovación | Acceso a IA/Big Data | Lock-in | Spotify | Time-to-market |
+| Resiliencia | Backup/DR gestionado | Diseño erróneo | Capital One | MTTR |
+
+### Tips y curiosidades — Capítulo 1
+
+- Tip: etiqueta recursos por proyecto y entorno desde el día 1 para controlar costes.
+- Tip: define SLOs simples (p. ej. disponibilidad mensual 99.5%) y revísalos trimestralmente.
+- Curiosidad: el término “nube” popularizó el diagrama de Internet como una nube en los 90.
 
 ## 2. Modelos de nube
 
 > Mapa rápido modelos
+>
 > - Pública: elasticidad máxima / menor control.
 > - Privada: control / mayor coste inicial.
 > - Híbrida: equilibrio dinámico / complejidad de integración.
 > - Comunitaria: costes compartidos / gobernanza difícil.
 > - Decisión: regulación + patrón de carga + sensibilidad de datos + presupuesto.
+>
 
 **Atajo mental:** "Más control = más coste y más responsabilidad".
 
@@ -512,12 +555,45 @@ La **nube privada** proporciona recursos exclusivos para una sola organización,
 
 ---
 
+### Tabla síntesis — Capítulo 2
+
+| Modelo | Cuándo conviene | Riesgo típico | Coste relativo |
+|--------|------------------|---------------|----------------|
+| Pública | Picos impredecibles | Dependencia proveedor | Bajo inicial |
+| Privada | Datos ultrasensibles | Capacidad ociosa | Alto CAPEX |
+| Híbrida | Integración progresiva | Complejidad | Mixto |
+| Comunitaria | Sector regulado compartido | Gobernanza | Compartido |
+
+### Tips y curiosidades — Capítulo 2
+
+- Tip: si dudas entre privada e híbrida, empieza híbrida con datos sensibles on‑prem.
+- Tip: planifica salidas (backups portables, IaC neutral) para reducir lock‑in.
+- Curiosidad: “cloud bursting” se acuñó para describir desbordes desde privada a pública en picos.
+
 ## 3. Servicios en la nube
 
 > Mapa rápido servicios
+>
 > - IaaS: control de SO / redes (flexibilidad vs. esfuerzo).
 > - PaaS: acelerar desarrollo (menor fricción, riesgo lock‑in).
 > - SaaS: listo para usar (mínimo control técnico).
+>
+
+### Tabla síntesis — Capítulo 3
+
+| Servicio | Control | Velocidad | Ejemplo | Riesgo |
+|----------|---------|----------|---------|--------|
+| IaaS | Alto | Media | EC2/GCE | Gestión compleja |
+| PaaS | Medio | Alta | App Engine/Heroku | Lock‑in |
+| SaaS | Bajo | Muy alta | Salesforce/365 | Personalización limitada |
+| FaaS | Bajo | Muy alta | Lambda/Functions | Cold start |
+
+### Tips y curiosidades — Capítulo 3
+
+- Tip: combina PaaS para lo “comoditizable” e IaaS para lo crítico o especializado.
+- Tip: en FaaS, calienta funciones en horas pico para minimizar cold start.
+- Curiosidad: el primer SaaS masivo fue Salesforce (1999) con CRM 100% web.
+
 > - FaaS: eventos, pago por invocación (cold start / límites).
 > - Mezcla recomendada: base en IaaS + innovación en PaaS + productividad en SaaS + triggers en FaaS.
 
@@ -708,7 +784,9 @@ Estrategia recomendada: muchas organizaciones adoptan una **combinación**: infr
 ## 4. Posibilidades del trabajo en la nube  
 
 > Mapa rápido posibilidades
+>
 > - Colaboración: edición simultánea + comunicación.
+>
 > - Acceso ubicuo: continuidad / resiliencia.
 > - Escalabilidad económica: pago por uso.
 > - Nuevos modelos: streaming, suscripción, datos.
@@ -874,60 +952,100 @@ El trabajo en la nube combina colaboración global, acceso ininterrumpido, ahorr
 
 ---
 
+### Tabla síntesis — Capítulo 4
+
+| Beneficio | Ejemplo | Indicador |
+|-----------|---------|-----------|
+| Colaboración | Docs compartidos | Nº ediciones simultáneas |
+| Continuidad | Backups gestionados | RTO/RPO |
+| Ahorro costes | SaaS vs licencias | Coste/usuario |
+| Nuevos modelos | Data products | Ingresos por dato |
+
+### Tips y curiosidades — Capítulo 4
+
+- Tip: define políticas de compartición y vencimientos para evitar “sprawl”.
+- Tip: usa CDN para contenidos estáticos en clases/talleres masivos.
+- Curiosidad: durante 2020, algunas plataformas multiplicaron su tráfico x20 en semanas.
+
 ## 5. Edge computing
 
 > Mapa rápido edge/fog/mist
+>
 > - Mist: sensor / micro-dispositivo.
 > - Fog: nodo intermedio agregador.
 > - Edge: gateway / micro-centro cercano.
 > - Cloud: entrenamiento, almacenamiento histórico.
 > - Flujo: datos crudos → filtrado → agregación → analítica profunda.
+>
 
 **Resumen visual (texto):** Latencia decrece al acercar el cómputo; capacidad de cómputo aumenta hacia la nube.
 
 ### 5.1 Concepto y fundamentos
 
 **Edge computing** desplaza procesamiento y toma de decisiones hacia la periferia de la red, en dispositivos, gateways y micro-centros locales. Esta sección unifica conceptos ya expuestos en el documento y amplía aspectos prácticos: arquitectura, técnicas, herramientas, **seguridad**, economía y ejemplos reales.
-![Edge vs Cloud](images/edge-vs-cloud.png)
-![Cloud ROI](images/cloud-roi.png)
+![Edge vs Cloud](https://via.placeholder.com/960x540.png?text=Edge+vs+Cloud)
+![Latencia vs proximidad](https://via.placeholder.com/960x540.png?text=Latency+vs+Proximity)
 
 El despliegue de arquitecturas **edge** no es solamente una decisión tecnológica, sino una estrategia organizativa que implica rediseñar flujos de datos, responsabilidades operativas y modelos de negocio. Un proyecto **edge** bien planteado parte de un análisis de requisitos (**latencia** máxima tolerable, volumen y sensibilidad de datos, disponibilidad requerida y **coste** por nodo) y suele arrancar con pilotos acotados: un número reducido de dispositivos, métricas claras y un plan de rollback. Técnico y operativo deben converger: ingenieros de datos, equipos de redes, **seguridad** y operaciones (**DevOps/IoT Ops**) deben coordinarse para definir pipelines de datos locales y remotos, políticas de gobernanza y procesos de actualización (**OTA**). La gestión del cambio es clave: los equipos necesitan formación en nuevas herramientas (orquestadores ligeros, runtimes de inferencia) y en prácticas de **seguridad** específicas del borde. Además, la naturaleza distribuida del **edge** obliga a pensar en monitorización y observabilidad desde el inicio: telemetría sobre rendimiento, estado de hardware, uso de modelos y **latencia** end-to-end. Este enfoque minimiza riesgos, facilita iteraciones rápidas y ayuda a demostrar el **retorno de inversión** antes de una escala masiva.
-![Cloud ROI](images/cloud-roi.png)
+![Herramientas edge](https://via.placeholder.com/960x540.png?text=Edge+Tooling)
 
 Desde el punto de vista técnico, diseñar para el **edge** significa aceptar heterogeneidad: distintos procesadores (**ARM**, **x86**), aceleradores (**GPU**, **NPU**, **TPU**), capacidades de memoria y conectividades. Esto obliga a abstraer despliegues mediante **contenedores ligeros** y runtimes que soporten cross-compilation y modelos quantizados que reduzcan tamaño y **latencia** de inferencia. El uso de formatos estándar como **ONNX** facilita portar modelos entre plataformas; al mismo tiempo, frameworks como **TensorFlow Lite** o **PyTorch Mobile** permiten optimizaciones específicas. En redes, los patrones híbridos (procesado local + sincronización eventual con la nube) reducen el ancho de banda consumido y mejoran **resiliencia**. Para cargas críticas, el diseño debe contemplar redundancia local y estrategias de failover, por ejemplo replicando funciones clave entre varios nodos o manteniendo capacidades mínimas en la nube para tomar el control si el borde falla. Finalmente, la automatización del pipeline — desde **CI/CD** de modelos hasta despliegues **OTA** seguros— es vital para mantener consistencia operativa en miles de nodos distribuidos.
-![Decision flow](images/decision-flow.png)
+![Decision flow](https://via.placeholder.com/960x540.png?text=Decision+Flow)
 
 Mirando al futuro, varias tendencias acelerarán la adopción del **edge**: la consolidación del **5G** de baja **latencia**, la aparición de procesadores especializados para inferencia en dispositivos de bajo consumo y la maduración de plataformas de orquestación ligera que facilitan despliegues a escala. Asimismo, veremos una convergencia entre prácticas de **seguridad** cloud-native (**mTLS**, **Zero Trust**) y requisitos de hardware (**TPM**, arranque seguro) que permitirá implementar modelos de confianza distribuidos. Por otro lado, el **edge** fomentará nuevos servicios digitales que monetizan la **latencia** —por ejemplo, experiencias inmersivas en eventos deportivos o aplicaciones industriales que cobran por garantía de respuesta en tiempo real—. A medida que la tecnología y el ecosistema maduren, el desafío será mantener **interoperabilidad** y gestionar la complejidad operativa sin sacrificar **seguridad** ni gobernanza de datos.
-![Edge vs Cloud](images/edge-vs-cloud.png)
+![Edge vs Cloud](https://via.placeholder.com/960x540.png?text=Edge+vs+Cloud)
 
 El **edge computing** acerca el procesamiento de datos al lugar donde se generan para reducir **latencia**, ahorrar ancho de banda y permitir respuestas en tiempo real. Se aplica en escenarios donde la rapidez de respuesta o la **privacidad** de los datos son críticas: control industrial, vehículos autónomos, dispositivos médicos conectados y análisis de video en cámaras de vigilancia.
-![Fog vs Mist](images/fog-mist-hierarchy.png)
+![Fog vs Mist](https://via.placeholder.com/960x540.png?text=Fog+vs+Mist)
 
 Técnicas comunes: microservicios y **contenedores ligeros** (ej. **Docker**), orquestación local (**Kubernetes/K3s**), modelos de inferencia optimizados (quantization, pruning) y runtime especializados (**TensorRT**, **ONNX Runtime**). Protocolos habituales: **MQTT**, **CoAP**, **gRPC** y **HTTP/2** para comunicación eficiente.
-![Cloud ROI](images/cloud-roi.png)
+![Cloud ROI](https://via.placeholder.com/960x540.png?text=Cloud+ROI)
 
+ 
 #### Ejemplos
+
 - Clasificador de vibraciones en un **PLC** que solo transmite alertas al sistema central para ahorrar ancho de banda.
 - Cámara de seguridad que ejecuta detección de personas localmente y solo sube clips tras confirmación.
 
+ 
 #### Casos reales
+
 - **Siemens** y **Bosch**: inferencia local para **mantenimiento predictivo** en líneas de producción, reduciendo downtime en 30%.
 - **Philips Healthcare**: procesamiento local en equipos de diagnóstico para acelerar resultados, mejorando precisión en IA médica.
 
+ 
 #### Enlaces
-- **ONNX**: https://onnx.ai – Estándar abierto para portabilidad de modelos, con tutoriales prácticos.
-- **TensorFlow Lite**: https://www.tensorflow.org/lite – Framework para edge, con ejemplos de código para dispositivos móviles.
-- **MQTT**: https://mqtt.org – Protocolo ligero para IoT, con guías de implementación.
 
+- **ONNX**: [onnx.ai](https://onnx.ai) – Estándar abierto para portabilidad de modelos, con tutoriales prácticos.
+- **TensorFlow Lite**: [tensorflow.org/lite](https://www.tensorflow.org/lite) – Framework para edge, con ejemplos de código para dispositivos móviles.
+- **MQTT**: [mqtt.org](https://mqtt.org) – Protocolo ligero para IoT, con guías de implementación.
+
+ 
 #### Infografía
-![Edge vs Cloud](images/edge-vs-cloud.png)
+
+![Edge vs Cloud](https://via.placeholder.com/960x540.png?text=Edge+vs+Cloud)
 
 **Resumen:** **Edge computing** fundamental para **latencia baja** y **privacidad**, con arquitectura híbrida y herramientas como **ONNX** y **TensorFlow Lite**, aplicadas en **Siemens** y **Philips** para mantenimiento y diagnóstico, equilibrando eficiencia y resiliencia.
 
 ### 5.2 Diferencias con la nube tradicional
 
 El **edge** complementa la nube en una jerarquía: **mist** (dispositivo) → **edge** (gateway/local node) → **fog** (regional aggregation) → nube (entrenamiento/almacenamiento global). La nube se encarga de entrenamiento de modelos, almacenamiento histórico y coordinación; el **edge** ejecuta inferencias, acciones locales y preprocesado de datos.
-![Decision flow](images/decision-flow.png)
+![Decision Flow (patrones edge→cloud)](https://via.placeholder.com/960x540.png?text=Decision+Flow)
+
+### Tabla síntesis — Capítulo 5
+
+| Capa | Latencia típica | Ejemplo | Decisión local |
+|------|-----------------|---------|----------------|
+| Mist | < 10 ms | Wearable | Muy limitada |
+| Edge | 10–50 ms | Gateway industrial | Alta |
+| Fog | 50–200 ms | Nodo regional | Media |
+| Nube | > 200 ms | Región cloud | Baja |
+
+### Tips y curiosidades — Capítulo 5
+
+- Tip: mide P95/P99 de latencia end‑to‑end en pilotos edge, no solo media.
+- Tip: automatiza OTA con firmas y rollback seguro.
+- Curiosidad: algunas fábricas ya operan “islas” edge desconectadas durante horas.
 
 Patrones arquitectónicos: procesamiento en el borde para filtrado y agregación, **cloud-assisted inference** (modelos ligeros en edge con reentrenamiento en la nube) y control híbrido (decisiones locales con sincronización eventual con la nube).
 
@@ -939,12 +1057,14 @@ El **edge** y la nube son compañeros de trabajo: la nube aporta memoria, contex
 
 Para que esta colaboración funcione se recomienda usar **APIs** estables y formatos interoperables (por ejemplo **JSON** o **Protobuf**), diseñar contratos de datos claros y emplear gateways como puntos de agregación y traducción de protocolos. Separar el plano de control (orquestación, políticas) del plano de datos (telemetría e inferencia) hace que las actualizaciones sean más seguras y sencillas. En términos cotidianos: el borde reduce la cantidad de información que viaja; la nube aporta el conocimiento que mejora las decisaiones futuras.
 
+ 
 #### Ejemplos, casos y recursos
+
 - Ejemplo práctico: un gateway que agrega datos de sensores y solo envía resúmenes o alertas, reduciendo ancho de banda.
 - Caso real: **Amazon Wavelength / MEC**, que integra **edge** con operadores móviles para servicios de baja **latencia** en 5G.
-- Recursos útiles: **NIST Edge Computing report** (https://www.nist.gov/publications) – Marco estandarizado con diagramas arquitectónicos.
-- **GSMA MEC** (https://www.gsma.com/future-networks/) – Casos de telecom con infografías de jerarquías edge-nube.
-- Infografía: ![Decision flow](images/decision-flow.png)
+- Recursos útiles: [NIST Edge Computing report](https://www.nist.gov/publications) – Marco estandarizado con diagramas arquitectónicos.
+- [GSMA MEC](https://www.gsma.com/future-networks/) – Casos de telecom con infografías de jerarquías edge-nube.
+- Infografía: ![Decision flow](https://via.placeholder.com/960x540.png?text=Decision+Flow)
 
 **Resumen:** **Fog** y **mist computing** se complementan con **edge** y nube en jerarquías distribuidas, optimizando **latencia** y eficiencia, como en **Amazon Wavelength** para telecomunicaciones, con patrones como **cloud-assisted inference** para equilibrar rapidez y escalabilidad.
 
@@ -952,10 +1072,10 @@ Para que esta colaboración funcione se recomienda usar **APIs** estables y form
 
 Las aplicaciones de **fog y mist computing** son amplias y se extienden a sectores que requieren **procesamiento rápido y confiable**:
 
-* **Transporte:** vehículos autónomos, gestión de tráfico y sistemas de transporte inteligentes.
-* **Industria:** fábricas inteligentes que detectan fallos o ajustan procesos en tiempo real.
-* **Salud:** wearables que monitorizan signos vitales y alertan de emergencias sin enviar todos los datos a la nube.
-* **Ciudades inteligentes:** gestión de semáforos, alumbrado público y sensores ambientales.
+- **Transporte:** vehículos autónomos, gestión de tráfico y sistemas de transporte inteligentes.
+- **Industria:** fábricas inteligentes que detectan fallos o ajustan procesos en tiempo real.
+- **Salud:** wearables que monitorizan signos vitales y alertan de emergencias sin enviar todos los datos a la nube.
+- **Ciudades inteligentes:** gestión de semáforos, alumbrado público y sensores ambientales.
 
 Estas aplicaciones muestran cómo **fog y mist computing** permiten decisiones inmediatas y **reducción de la latencia**, mientras que la nube centralizada se encarga de análisis global, almacenamiento y aprendizaje automático a gran escala.
 
@@ -980,13 +1100,13 @@ Estas aplicaciones muestran cómo **fog y mist computing** permiten decisiones i
 
 A pesar de sus ventajas, **fog y mist computing** enfrentan desafíos significativos:
 
-* **Seguridad y privacidad:** al procesar datos fuera de la nube, la protección debe extenderse a múltiples nodos.
-* **Interoperabilidad:** dispositivos, gateways y plataformas deben comunicarse de manera uniforme.
-* **Escalabilidad y mantenimiento:** agregar nuevos dispositivos o nodos puede aumentar la complejidad operativa.
-* **Consumo energético:** especialmente en **mist computing**, donde los dispositivos tienen recursos limitados.
+- **Seguridad y privacidad:** al procesar datos fuera de la nube, la protección debe extenderse a múltiples nodos.
+- **Interoperabilidad:** dispositivos, gateways y plataformas deben comunicarse de manera uniforme.
+- **Escalabilidad y mantenimiento:** agregar nuevos dispositivos o nodos puede aumentar la complejidad operativa.
+- **Consumo energético:** especialmente en **mist computing**, donde los dispositivos tienen recursos limitados.
 
 Implementar estas tecnologías requiere planificación, estándares claros, y herramientas que permitan gestionar **redes distribuidas y heterogéneas** sin comprometer eficiencia ni **seguridad**.
-![Cloud ROI](images/cloud-roi.png)
+![Cloud ROI](https://via.placeholder.com/960x540.png?text=Cloud+ROI)
 
 **Ejemplos y casos reales:**
 
@@ -1011,10 +1131,11 @@ Hablar de **costes** suele asustar a las organizaciones, pero lo más útil es t
 Además, hay modelos mixtos: en lugar de comprar y mantener todo el hardware, es posible contratar servicios gestionados de **edge** o alquilar nodos en modalidad "**as-a-service**". Estos modelos reducen la barrera de entrada y permiten validar hipótesis sin comprometer grandes inversiones iniciales. Para presentar **ROI**, conviene mostrar escenarios (optimista, realista, conservador) y el plazo esperado de recuperación, normalmente en meses a uno o dos años dependiendo del caso.
 
 **Ejemplos y casos reales:**
-* **Ejemplo:** **Jaguar Land Rover** calculó **ROI** de **edge** en telemetría vehicular, recuperando inversión en 12 meses por reducción de downtime.
-* **Caso real:** **Amazon Wavelength** ofrece **edge as-a-service** para desarrolladores, bajando **costes** iniciales en 70% vs. hardware propio.
-* **Enlace:** [ROI Edge - CloudTweaks](https://cloudtweaks.com/2025/09/cloud-exit-economics-real-world-roi-financial-models/) – Modelo financiero con calculadoras interactivas para escenarios edge.
-* **Tabla comparativa rápida:**
+
+- **Ejemplo:** **Jaguar Land Rover** calculó **ROI** de **edge** en telemetría vehicular, recuperando inversión en 12 meses por reducción de downtime.
+- **Caso real:** **Amazon Wavelength** ofrece **edge as-a-service** para desarrolladores, bajando **costes** iniciales en 70% vs. hardware propio.
+- **Enlace:** [ROI Edge - CloudTweaks](https://cloudtweaks.com/2025/09/cloud-exit-economics-real-world-roi-financial-models/) – Modelo financiero con calculadoras interactivas para escenarios edge.
+- **Tabla comparativa rápida:**
 
 | Escenario     | Coste Inicial | ROI Tiempo | Ejemplo              |
 | ------------- | ------------- | ---------- | -------------------- |
@@ -1024,10 +1145,12 @@ Además, hay modelos mixtos: en lugar de comprar y mantener todo el hardware, es
 
 **Resumen:** **Costes** en **edge** se validan con pilotos para **ROI** rápido, como en **Jaguar Land Rover** (12 meses), usando modelos **as-a-service** para minimizar inversión inicial y maximizar resiliencia.
 
-**Mini calculadora conceptual (texto)**
+#### Mini calculadora conceptual (texto)
+
 > ROI ≈ (Ahorro anual paradas + Ahorro ancho de banda + Reducción soporte) – (CapEx hardware + OpEx gestión + Formación)
 
-**Indicadores recomendados**
+#### Indicadores recomendados
+
 - % reducción downtime
 - p95 latencia decisión
 - GB filtrados local vs crudos
@@ -1040,11 +1163,12 @@ Además, hay modelos mixtos: en lugar de comprar y mantener todo el hardware, es
 Para cerrar, proponemos una pequeña guía práctica: empezar por un piloto corto y medible, seleccionar 3 **KPIs** (**latencia**, GB/día, reducción de downtime), automatizar despliegues y asegurar trazabilidad de cambios. A partir de los resultados del piloto se decide escala y modelo de operación.
 
 #### Ejemplos, casos, enlaces y tabla resumen
+
 - Casos reales: **Siemens**, **Bosch**, **Philips Healthcare**, **Jaguar Land Rover**, **Amazon Wavelength** – **Siemens** integra **edge** con IA para fábricas inteligentes.
-- Enlaces y recursos: **AWS Edge overview** (https://aws.amazon.com/edge/) – Portal con whitepapers y labs gratuitos.
-- **Intel Edge AI** (https://www.intel.com/content/www/us/en/artificial-intelligence/edge-ai.html) – Recursos educativos con videos.
-- **EdgeX Foundry** (https://www.edgexfoundry.org) – Comunidad open-source con foros.
-- **Balena** (https://www.balena.io) – Plataforma con casos de despliegue OTA en dispositivos remotos.
+- Enlaces y recursos: [AWS Edge overview](https://aws.amazon.com/edge/) – Portal con whitepapers y labs gratuitos.
+- [Intel Edge AI](https://www.intel.com/content/www/us/en/artificial-intelligence/edge-ai.html) – Recursos educativos con videos.
+- [EdgeX Foundry](https://www.edgexfoundry.org) – Comunidad open-source con foros.
+- [Balena](https://www.balena.io) – Plataforma con casos de despliegue OTA en dispositivos remotos.
 - Ejemplos prácticos: cámaras que envían metadatos, **PLCs** con detección local de vibraciones, gateways que agregan y normalizan telemetría.
 
 Tabla resumen (**KPIs / Beneficio / Ejemplo**):
@@ -1061,11 +1185,27 @@ Tabla resumen (**KPIs / Beneficio / Ejemplo**):
 
 ## 6. Fog computing y mist computing
 
+### Tabla síntesis — Capítulo 6
+
+| Concepto | Dónde corre | Ventaja | Reto |
+|----------|-------------|---------|------|
+| Mist | Dispositivo | Privacidad, latencia mínima | Recursos limitados |
+| Fog | Nodo intermedio | Agregación, resiliencia regional | Gestión compleja |
+| Cloud | Región cloud | Capacidad, analítica profunda | Latencia |
+
+### Tips y curiosidades — Capítulo 6
+
+- Tip: decide qué features degradan “offline” en fog para continuidad.
+- Tip: usa colas ligeras para tolerar desconexiones.
+- Curiosidad: el término “fog” lo acuñó Cisco como “nube cerca del suelo”.
+
 > Mapa rápido fog/mist
+>
 > - Mist: decisión micro (sensor) → prioriza latencia y energía.
 > - Fog: agrega y resume datos de múltiples mist.
 > - Función: aliviar nube y reducir tráfico.
 > - Clave: segmentar qué se procesa dónde.
+>
 
 
 ### 6.1 Definición de fog computing
@@ -1073,13 +1213,14 @@ Tabla resumen (**KPIs / Beneficio / Ejemplo**):
 El **fog computing** es un modelo de computación distribuida que extiende los servicios de la nube hacia la **periferia de la red**, cerca de los dispositivos que generan datos. Su objetivo es **reducir la latencia** y mejorar la eficiencia en el procesamiento, almacenamiento y análisis de información, especialmente en aplicaciones que requieren **respuesta en tiempo real**, como vehículos autónomos, ciudades inteligentes o **IoT** industrial.
 
 A diferencia de la nube tradicional, en la que los datos viajan hasta centros de datos remotos, el **fog computing** procesa información en nodos intermedios, como routers, gateways o servidores locales. Esto permite **filtrar, analizar y reaccionar rápidamente** ante eventos críticos sin depender completamente de la nube. Además, mejora la **seguridad**, ya que parte de los datos sensibles puede permanecer en la red local antes de enviarse al centro de datos.
-![Fog vs Mist](images/fog-mist-hierarchy.png)
+![Fog vs Mist](https://via.placeholder.com/960x540.png?text=Fog+vs+Mist)
 
 **Ejemplos y casos reales:**
-* **Ejemplo:** En ciudades inteligentes, sensores de tráfico procesan datos en nodos **fog** para ajustar semáforos en tiempo real, optimizando flujo vehicular.
-* **Caso real:** **Cisco Fog Computing Platform** ofrece infraestructura **fog** para **IoT** industrial, usada por utilities para monitoreo de grids energéticos.
-* **Enlace:** [Cisco Fog Computing](https://www.cisco.com/c/en/us/solutions/internet-of-things/fog-computing.html) – Whitepaper con diagramas de arquitectura fog para IoT.
-* **Tabla comparativa rápida:**
+
+- **Ejemplo:** En ciudades inteligentes, sensores de tráfico procesan datos en nodos **fog** para ajustar semáforos en tiempo real, optimizando flujo vehicular.
+- **Caso real:** **Cisco Fog Computing Platform** ofrece infraestructura **fog** para **IoT** industrial, usada por utilities para monitoreo de grids energéticos.
+- **Enlace:** [Cisco Fog Computing](https://www.cisco.com/c/en/us/solutions/internet-of-things/fog-computing.html) – Whitepaper con diagramas de arquitectura fog para IoT.
+- **Tabla comparativa rápida:**
 
 | Característica | Función                  | Beneficio                |
 | -------------- | ------------------------ | ------------------------ |
@@ -1094,13 +1235,14 @@ A diferencia de la nube tradicional, en la que los datos viajan hasta centros de
 El **mist computing** lleva el concepto de **fog computing** un paso más cerca del **dispositivo final**, realizando procesamiento **en el mismo dispositivo o muy cerca de él**, incluso en sensores o actuadores **IoT**. Su objetivo principal es **minimizar la latencia al máximo**, optimizar el consumo energético y reducir la necesidad de enviar grandes volúmenes de datos a la nube o al **fog**.
 
 **Mist computing** es especialmente útil en dispositivos con **capacidad limitada de almacenamiento o potencia**, como wearables, drones o sensores remotos. Permite que las decisiones se tomen localmente y solo se envíen a la nube los datos agregados o relevantes, disminuyendo la congestión de la red y mejorando la eficiencia global.
-![Fog vs Mist](images/fog-mist-hierarchy.png)
+![Fog vs Mist](https://via.placeholder.com/960x540.png?text=Fog+vs+Mist)
 
 **Ejemplos y casos reales:**
-* **Ejemplo:** Sensores en fábricas inteligentes que detectan fallos mecánicos y reaccionan localmente antes de alertar al sistema central, ahorrando energía.
-* **Caso real:** **Libelium Mist Computing IoT** permite procesar datos directamente en nodos de sensores distribuidos, usado en agricultura para monitoreo remoto.
-* **Enlace:** [Libelium Mist Computing](https://www.libelium.com/mist-computing-iot/) – Casos de estudio con métricas de ahorro energético en sensores.
-* **Tabla comparativa rápida:**
+
+- **Ejemplo:** Sensores en fábricas inteligentes que detectan fallos mecánicos y reaccionan localmente antes de alertar al sistema central, ahorrando energía.
+- **Caso real:** **Libelium Mist Computing IoT** permite procesar datos directamente en nodos de sensores distribuidos, usado en agricultura para monitoreo remoto.
+- **Enlace:** [Libelium Mist Computing](https://www.libelium.com/mist-computing-iot/) – Casos de estudio con métricas de ahorro energético en sensores.
+- **Tabla comparativa rápida:**
 
 | Característica | Función                  | Beneficio                |
 | -------------- | ------------------------ | ------------------------ |
@@ -1115,18 +1257,21 @@ El **mist computing** lleva el concepto de **fog computing** un paso más cerca 
 El **fog y mist computing** se relacionan estrechamente con el **edge computing**, ya que todos buscan acercar el procesamiento a los datos. Mientras el **edge** generalmente procesa datos en dispositivos cercanos (como gateways o routers), el **mist** lo hace **directamente en los sensores** y el **fog** en **nodos intermedios de la red**, sirviendo como puente entre **edge** y nube.
 
 Esta jerarquía permite **optimizar la distribución del procesamiento**: el **mist** realiza decisiones instantáneas en el dispositivo, el **fog** agrega y analiza datos a nivel local o regional, y la nube centraliza la información para análisis profundo, almacenamiento masivo y servicios de **inteligencia artificial** a gran escala. Así, se logra un **equilibrio entre velocidad, eficiencia y capacidad de cómputo**, adaptado a cada necesidad de la aplicación.
-![Edge vs Cloud](images/edge-vs-cloud.png)
+![Edge vs Cloud](https://via.placeholder.com/960x540.png?text=Edge+vs+Cloud)
 
 **Ejemplos y casos reales:**
-* **Ejemplo:** Vehículos autónomos usan **mist** para detectar obstáculos, **fog** para coordinar tráfico local y nube para análisis global de patrones.
-* **Caso real:** **Siemens MindSphere** combina **edge**, **fog** y nube para optimización industrial, integrando sensores en fábricas.
 
-#### Infografía
-![Decision flow](images/decision-flow.png)
+- **Ejemplo:** Vehículos autónomos usan **mist** para detectar obstáculos, **fog** para coordinar tráfico local y nube para análisis global de patrones.
+- **Caso real:** **Siemens MindSphere** combina **edge**, **fog** y nube para optimización industrial, integrando sensores en fábricas.
+
+#### Infografía — Edge→Cloud
+
+![Decision flow](https://via.placeholder.com/960x540.png?text=Decision+Flow)
 
 **Resumen:** Los **retos** del **edge** incluyen complejidad operativa y **seguridad distribuida**, como en **Verizon** con parches **OTA**, requiriendo **TPM** y **mTLS** para fallback y escalabilidad, equilibrando beneficios con gestión proactiva.
 
-**Tabla retos vs mitigación ampliada**
+#### Tabla retos vs mitigación ampliada
+
 | Reto | Causa raíz | Impacto negocio | Mitigación técnica | Métrica seguimiento |
 |------|-----------|----------------|--------------------|---------------------|
 | Gestión masiva | Heterogeneidad HW | Escala lenta | Orquestación ligera (K3s) | Nº nodos gestionados/operador |
@@ -1143,10 +1288,11 @@ Hablar de **costes** suele asustar a las organizaciones, pero lo más útil es t
 Además, hay modelos mixtos: en lugar de comprar y mantener todo el hardware, es posible contratar servicios gestionados de **edge** o alquilar nodos en modalidad "**as-a-service**". Estos modelos reducen la barrera de entrada y permiten validar hipótesis sin comprometer grandes inversiones iniciales. Para presentar **ROI**, conviene mostrar escenarios (optimista, realista, conservador) y el plazo esperado de recuperación, normalmente en meses a uno o dos años dependiendo del caso.
 
 **Ejemplos y casos reales:**
-* **Ejemplo:** **Jaguar Land Rover** calculó **ROI** de **edge** en telemetría vehicular, recuperando inversión en 12 meses por reducción de downtime.
-* **Caso real:** **Amazon Wavelength** ofrece **edge as-a-service** para desarrolladores, bajando **costes** iniciales en 70% vs. hardware propio.
-* **Enlace:** [ROI Edge - CloudTweaks](https://cloudtweaks.com/2025/09/cloud-exit-economics-real-world-roi-financial-models/) – Modelo financiero con calculadoras interactivas para escenarios edge.
-* **Tabla comparativa rápida:**
+
+- **Ejemplo:** **Jaguar Land Rover** calculó **ROI** de **edge** en telemetría vehicular, recuperando inversión en 12 meses por reducción de downtime.
+- **Caso real:** **Amazon Wavelength** ofrece **edge as-a-service** para desarrolladores, bajando **costes** iniciales en 70% vs. hardware propio.
+- **Enlace:** [ROI Edge - CloudTweaks](https://cloudtweaks.com/2025/09/cloud-exit-economics-real-world-roi-financial-models/) – Modelo financiero con calculadoras interactivas para escenarios edge.
+- **Tabla comparativa rápida:**
 
 | Escenario     | Coste Inicial | ROI Tiempo | Ejemplo              |
 | ------------- | ------------- | ---------- | -------------------- |
@@ -1156,10 +1302,12 @@ Además, hay modelos mixtos: en lugar de comprar y mantener todo el hardware, es
 
 **Resumen:** **Costes** en **edge** se validan con pilotos para **ROI** rápido, como en **Jaguar Land Rover** (12 meses), usando modelos **as-a-service** para minimizar inversión inicial y maximizar resiliencia.
 
-**Mini calculadora conceptual (texto)**
+#### Mini calculadora conceptual (texto)
+
 > ROI ≈ (Ahorro anual paradas + Ahorro ancho de banda + Reducción soporte) – (CapEx hardware + OpEx gestión + Formación)
 
-**Indicadores recomendados**
+#### Indicadores recomendados
+
 - % reducción downtime
 - p95 latencia decisión
 - GB filtrados local vs crudos
@@ -1171,12 +1319,13 @@ Además, hay modelos mixtos: en lugar de comprar y mantener todo el hardware, es
 
 Para cerrar, proponemos una pequeña guía práctica: empezar por un piloto corto y medible, seleccionar 3 **KPIs** (**latencia**, GB/día, reducción de downtime), automatizar despliegues y asegurar trazabilidad de cambios. A partir de los resultados del piloto se decide escala y modelo de operación.
 
-#### Ejemplos, casos, enlaces y tabla resumen
+#### Ejemplos, casos, enlaces y tabla resumen (Cap. 5)
+<a id="ejemplos-casos-enlaces-y-tabla-resumen-1"></a>
 - Casos reales: **Siemens**, **Bosch**, **Philips Healthcare**, **Jaguar Land Rover**, **Amazon Wavelength** – **Siemens** integra **edge** con IA para fábricas inteligentes.
-- Enlaces y recursos: **AWS Edge overview** (https://aws.amazon.com/edge/) – Portal con whitepapers y labs gratuitos.
-- **Intel Edge AI** (https://www.intel.com/content/www/us/en/artificial-intelligence/edge-ai.html) – Recursos educativos con videos.
-- **EdgeX Foundry** (https://www.edgexfoundry.org) – Comunidad open-source con foros.
-- **Balena** (https://www.balena.io) – Plataforma con casos de IoT edge.
+- Enlaces y recursos: [AWS Edge overview](https://aws.amazon.com/edge/) – Portal con whitepapers y labs gratuitos.
+- [Intel Edge AI](https://www.intel.com/content/www/us/en/artificial-intelligence/edge-ai.html) – Recursos educativos con videos.
+- [EdgeX Foundry](https://www.edgexfoundry.org) – Comunidad open-source con foros.
+- [Balena](https://www.balena.io) – Plataforma con casos de IoT edge.
 - Ejemplos prácticos: cámaras que envían metadatos, **PLCs** con detección local de vibraciones, gateways que agregan y normalizan telemetría.
 
 Tabla resumen (**KPIs / Beneficio / Ejemplo**):
@@ -1192,6 +1341,18 @@ Tabla resumen (**KPIs / Beneficio / Ejemplo**):
 **Resumen:** Guía práctica para **edge**: inicia con pilotos midiendo **KPIs** clave, usando recursos como **AWS** y **Intel**, con casos como **Siemens** demostrando escalabilidad, cerrando con automatización para operación eficiente.
 
 ## 6. Fog computing y mist computing
+### Tabla síntesis — Capítulo 6 (continuación)
+
+| Caso | Beneficio | Métrica |
+|------|-----------|---------|
+| Vídeo analítica | Filtrado local | Ancho de banda ahorrado |
+| IoT industrial | Latencia baja | Tiempo de ciclo |
+| Salud | Datos sensibles locales | Cumplimiento |
+
+### Tips y curiosidades — Capítulo 6 (continuación)
+
+- Tip: separa plano de control y de datos para escalar por capas.
+- Curiosidad: algunos dispositivos integran TPM incluso en microcontroladores.
 
 > Mapa rápido fog/mist
 > - Mist: decisión micro (sensor) → prioriza latencia y energía.
@@ -1205,7 +1366,7 @@ Tabla resumen (**KPIs / Beneficio / Ejemplo**):
 El **fog computing** es un modelo de computación distribuida que extiende los servicios de la nube hacia la **periferia de la red**, cerca de los dispositivos que generan datos. Su objetivo es **reducir la latencia** y mejorar la eficiencia en el procesamiento, almacenamiento y análisis de información, especialmente en aplicaciones que requieren **respuesta en tiempo real**, como vehículos autónomos, ciudades inteligentes o **IoT** industrial.
 
 A diferencia de la nube tradicional, en la que los datos viajan hasta centros de datos remotos, el **fog computing** procesa información en nodos intermedios, como routers, gateways o servidores locales. Esto permite **filtrar, analizar y reaccionar rápidamente** ante eventos críticos sin depender completamente de la nube. Además, mejora la **seguridad**, ya que parte de los datos sensibles puede permanecer en la red local antes de enviarse al centro de datos.
-![Fog vs Mist](images/fog-mist-hierarchy.png)
+![Fog vs Mist](https://via.placeholder.com/960x540.png?text=Fog+vs+Mist)
 
 **Ejemplos y casos reales:**
 * **Ejemplo:** En ciudades inteligentes, sensores de tráfico procesan datos en nodos **fog** para ajustar semáforos en tiempo real, optimizando flujo vehicular.
@@ -1226,7 +1387,7 @@ A diferencia de la nube tradicional, en la que los datos viajan hasta centros de
 El **mist computing** lleva el concepto de **fog computing** un paso más cerca del **dispositivo final**, realizando procesamiento **en el mismo dispositivo o muy cerca de él**, incluso en sensores o actuadores **IoT**. Su objetivo principal es **minimizar la latencia al máximo**, optimizar el consumo energético y reducir la necesidad de enviar grandes volúmenes de datos a la nube o al **fog**.
 
 **Mist computing** es especialmente útil en dispositivos con **capacidad limitada de almacenamiento o potencia**, como wearables, drones o sensores remotos. Permite que las decisiones se tomen localmente y solo se envíen a la nube los datos agregados o relevantes, disminuyendo la congestión de la red y mejorando la eficiencia global.
-![Fog vs Mist](images/fog-mist-hierarchy.png)
+![Fog vs Mist](https://via.placeholder.com/960x540.png?text=Fog+vs+Mist)
 
 **Ejemplos y casos reales:**
 * **Ejemplo:** Sensores en fábricas inteligentes que detectan fallos mecánicos y reaccionan localmente antes de alertar al sistema central, ahorrando energía.
@@ -1247,7 +1408,7 @@ El **mist computing** lleva el concepto de **fog computing** un paso más cerca 
 El **fog y mist computing** se relacionan estrechamente con el **edge computing**, ya que todos buscan acercar el procesamiento a los datos. Mientras el **edge** generalmente procesa datos en dispositivos cercanos (como gateways o routers), el **mist** lo hace **directamente en los sensores** y el **fog** en **nodos intermedios de la red**, sirviendo como puente entre **edge** y nube.
 
 Esta jerarquía permite **optimizar la distribución del procesamiento**: el **mist** realiza decisiones instantáneas en el dispositivo, el **fog** agrega y analiza datos a nivel local o regional, y la nube centraliza la información para análisis profundo, almacenamiento masivo y servicios de **inteligencia artificial** a gran escala. Así, se logra un **equilibrio entre velocidad, eficiencia y capacidad de cómputo**, adaptado a cada necesidad de la aplicación.
-![Edge vs Cloud](images/edge-vs-cloud.png)
+![Edge vs Cloud](https://via.placeholder.com/960x540.png?text=Edge+vs+Cloud)
 
 **Ejemplos y casos reales:**
 * **Ejemplo:** Vehículos autónomos usan **mist** para detectar obstáculos, **fog** para coordinar tráfico local y nube para análisis global de patrones.
@@ -1273,7 +1434,7 @@ Las aplicaciones de **fog y mist computing** son amplias y se extienden a sector
 * **Ciudades inteligentes:** gestión de semáforos, alumbrado público y sensores ambientales.
 
 Estas aplicaciones muestran cómo **fog y mist computing** permiten decisiones inmediatas y **reducción de la latencia**, mientras que la nube centralizada se encarga de análisis global, almacenamiento y aprendizaje automático.
-![Decision flow](images/decision-flow.png)
+![Decision flow](https://via.placeholder.com/960x540.png?text=Decision+Flow)
 
 **Ejemplos y casos reales:**
 * **Ejemplo:** **Philips** utiliza sensores **mist** en hospitales para monitorización continua de pacientes, alertando localmente emergencias.
@@ -1299,7 +1460,7 @@ A pesar de sus ventajas, **fog y mist computing** enfrentan desafíos significat
 * **Consumo energético:** especialmente en **mist computing**, donde los dispositivos tienen recursos limitados.
 
 Implementar estas tecnologías requiere planificación, estándares claros, y herramientas que permitan gestionar **redes distribuidas y heterogéneas** sin comprometer eficiencia ni **seguridad**.
-![Cloud ROI](images/cloud-roi.png)
+![Cloud ROI](https://via.placeholder.com/960x540.png?text=Cloud+ROI)
 
 **Ejemplos y casos reales:**
 * **Ejemplo:** La falta de estándares de **seguridad** ralentiza la adopción de **mist computing** en **IoT** doméstico, exponiendo vulnerabilidades.
@@ -1357,7 +1518,7 @@ graph TD
 ### 7.1 Factores técnicos
 
 La elección de un modelo de computación, ya sea **nube pública, privada, híbrida o comunitaria**, depende en gran medida de factores técnicos relacionados con las necesidades operativas y la infraestructura existente. Entre los aspectos más importantes están la **compatibilidad de aplicaciones**, la **capacidad de integración con sistemas heredados**, la **latencia aceptable** y la **capacidad de procesamiento y almacenamiento requerida**. Por ejemplo, una aplicación que requiere respuesta en tiempo real puede beneficiarse de un modelo **híbrido** o **edge/fog computing** para reducir **latencia**.
-![Edge vs Cloud](images/edge-vs-cloud.png)
+![Edge vs Cloud](https://via.placeholder.com/960x540.png?text=Edge+vs+Cloud)
 
 También se debe considerar la **resiliencia y redundancia**: si la empresa depende de sistemas críticos, necesitará un modelo que permita recuperación ante desastres y alta disponibilidad, lo que puede inclinar la elección hacia nubes **privadas** o **híbridas** con nodos redundantes. La **virtualización y contenedorización** de aplicaciones es otro factor técnico clave, ya que facilita la migración entre distintos entornos sin interrumpir operaciones.
 
@@ -1449,6 +1610,19 @@ La **flexibilidad** también implica **capacidad de migración**, integración d
 **Resumen:** **Escalabilidad** y **flexibilidad** inclinan hacia pública para picos (ej. Netflix Black Friday en AWS), híbrida para equilibrio, facilitando migración y despliegue rápido en innovación.
 
 ### 7.5 Toma de decisiones estratégicas
+### Tabla síntesis — Capítulo 7
+
+| Criterio | Opción recomendada | Motivo |
+|----------|---------------------|--------|
+| Picos fuertes | Pública/FaaS | Escalado automático |
+| Datos sensibles | Privada/Híbrida | Control y cumplimiento |
+| Time-to-market | PaaS/SaaS | Agilidad |
+| Coste estable | Reservadas | Descuento predictible |
+
+### Tips y curiosidades — Capítulo 7
+
+- Tip: valida 1–2 hipótesis por trimestre con pilotos baratos antes de decidir.
+- Curiosidad: muchas decisiones malas nacen de no etiquetar costes por servicio.
 
 La **decisión estratégica** sobre el modelo de computación debe considerar **objetivos de negocio**, riesgos, **costes** y tecnología. No se trata solo de elegir la opción más barata o segura, sino de alinear la infraestructura con la visión corporativa. Empresas que dependen de datos críticos y cumplimiento normativo pueden priorizar **privacidad y control**, mientras que startups buscan **agilidad y escalabilidad**.
 
@@ -1595,6 +1769,21 @@ Evaluar el **ROI** requiere analizar tanto **beneficios tangibles** (ahorro en *
 | ROI                       | Lento    | Más rápido y medible |
 
 **Resumen:** **ROI** en nube mide ahorros tangibles e intangibles, como en **Netflix** (200% anual) y **Dropbox** (9 meses recuperación), optimizando **escalabilidad** para crecimiento sostenible.
+
+### Tabla síntesis — Capítulo 8
+
+| Concepto | Cómo medir | Horizonte |
+|----------|-----------|-----------|
+| TCO | Costes totales actuales vs proyectados | 12–36 meses |
+| ROI | (Beneficio − Coste)/Coste | 6–24 meses |
+| Ahorro | % reducción mensual | Mensual |
+| Productividad | Entregas por equipo | Trimestral |
+
+### Tips y curiosidades — Capítulo 8
+
+- Tip: calcula ROI en 3 escenarios (pesimista, base, optimista) y haz sensibilidad.
+- Tip: automatiza reports de coste y consumo (etiquetas, budgets, alertas).
+- Curiosidad: el mayor “cost killer” suele ser apagar recursos fuera de horario.
 
 ## RETO PROFESIONAL
 1. **Nuestro centro en la nube**
@@ -1834,17 +2023,15 @@ Las siguientes imágenes se utilizan bajo sus respectivas licencias. Para más d
 
 | ALT (Documento) | Página origen | Autor / Fuente | Licencia |
 |-----------------|---------------|----------------|----------|
-| Historia de la nube | [Cloud_computing_icon.svg](https://commons.wikimedia.org/wiki/File:Cloud_computing_icon.svg) | Varios autores | CC BY-SA 3.0 |
+| Historia de la nube | [Cloud_computing_icon.svg.png](https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cloud_computing_icon.svg/512px-Cloud_computing_icon.svg.png) | Varios autores | CC BY-SA 3.0 |
 | Mainframe IBM antiguo | [IBM_System_360_Model_30.jpg](https://commons.wikimedia.org/wiki/File:IBM_System_360_Model_30.jpg) | Hydropeak + colaboradores | CC BY-SA 3.0 |
-| Crecimiento de la nube | [Cloud_computing.svg](https://commons.wikimedia.org/wiki/File:Cloud_computing.svg) | Sam Johnston + editores | CC BY-SA 3.0 |
-| Esquema de la nube | [Cloud_computing_icon.svg](https://commons.wikimedia.org/wiki/File:Cloud_computing_icon.svg) | Varios autores | CC BY-SA 3.0 |
-| Infraestructura de la nube | [Cloud_computing_stack.svg](https://commons.wikimedia.org/wiki/File:Cloud_computing_stack.svg) | Varios autores | CC BY-SA 3.0 |
-| Evolución tecnológica de la nube | [Cloud_computing_(1).svg](https://commons.wikimedia.org/wiki/File:Cloud_computing_(1).svg) | Varios autores | CC BY-SA 4.0 |
-| Adopción nube en sectores | [Cloud_services.svg](https://commons.wikimedia.org/wiki/File:Cloud_services.svg) | Varios autores | CC BY 4.0 |
-| Nube vs tradicional | [Client-server_model.svg](https://commons.wikimedia.org/wiki/File:Client-server_model.svg) | Aristeas | Dominio público |
-| Comparativa nube y servidores | [Server_and_cloud_computing.svg](https://commons.wikimedia.org/wiki/File:Server_and_cloud_computing.svg) | DigitalDesigner | CC BY 4.0 |
+| Crecimiento de la nube | [Cloud_computing.svg.png](https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Cloud_computing.svg/512px-Cloud_computing.svg.png) | Sam Johnston + editores | CC BY-SA 3.0 |
+| Esquema de la nube | [Cloud_computing_icon.svg.png](https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cloud_computing_icon.svg/512px-Cloud_computing_icon.svg.png) | Varios autores | CC BY-SA 3.0 |
+| Infraestructura de la nube | [Cloud_computing_stack.svg.png](https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Cloud_computing_stack.svg/512px-Cloud_computing_stack.svg.png) | Varios autores | CC BY-SA 3.0 |
+| Evolución tecnológica de la nube | [Cloud_computing_(1).svg.png](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Cloud_computing_%281%29.svg/512px-Cloud_computing_%281%29.svg.png) | Varios autores | CC BY-SA 4.0 |
+| Adopción nube en sectores | [Cloud_services.svg.png](https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Cloud_services.svg/512px-Cloud_services.svg.png) | Varios autores | CC BY 4.0 |
 | Riesgos en la nube | [Cloud_Security_Model.png](https://commons.wikimedia.org/wiki/File:Cloud_Security_Model.png) | Varios autores | CC BY-SA 3.0 |
-| Latencia y conectividad | [Latency_difference.svg](https://commons.wikimedia.org/wiki/File:Latency_difference.svg) | Varios autores | CC BY-SA 4.0 |
+| Latencia y conectividad | [Latency_difference.svg.png](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Latency_difference.svg/512px-Latency_difference.svg.png) | Varios autores | CC BY-SA 4.0 |
 | Infografía beneficios de la nube | (Fuera de Wikimedia) [airfocus](https://blogassets.airfocus.com/benefits-of-cloud-computing.png) | airfocus blog | (Revisar uso educativo) |
 | Esquema multicloud | [Multi-cloud_infrastructure_example.png](https://commons.wikimedia.org/wiki/File:Multi-cloud_infrastructure_example.png) | Varios autores | CC BY-SA 4.0 |
 
