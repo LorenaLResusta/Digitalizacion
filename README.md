@@ -763,10 +763,11 @@ Caso real: una startup combinó copia completa semanal con diferenciales diarios
 #### Estrategia 3-2-1
 
 ```mermaid
-graph TD
-  D[(Datos)] --> C1[Copia 1 (local)]
-  D --> C2[Copia 2 (otro soporte)]
-  D --> C3[Copia 3 (off-site/inmutable)]
+graph LR
+  SOB[Sobrescritura] --> REU[Reutilización del soporte]
+  DEG[Degaussing] --> RET[Retirada del soporte]
+  DES[Destrucción física] --> ELI[Eliminación definitiva]
+
 ```
 
 _Estrategia 3-2-1: 3 copias, 2 soportes, 1 externa/inmutable._
@@ -920,13 +921,7 @@ Caso real: una cadena minorista fue multada tras vender TPVs con datos de client
 
 ### 4.1. Panorama actual
 
-```mermaid
-flowchart TD
-  VOL[Mayor volumen de ataques] --> RIES[Mayor riesgo]
-  SOF[Más sofisticación de ataques] --> RIES
-  IMP[Impacto económico y reputacional] --> DEC[Más inversión en seguridad]
 
-```
 
 _Factores del panorama actual de amenazas._
 
