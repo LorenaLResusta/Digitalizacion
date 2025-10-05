@@ -82,7 +82,7 @@ graph TD
   A[Amenazas] --> D
   C[Controles] --> S
   L[Leyes y cumplimiento] --> P
-  S -.soporta.-> P
+  S -. soporta .-> P
 ```
 
 _Relación entre datos, seguridad (CIA), privacidad (RGPD), amenazas y controles._
@@ -136,12 +136,12 @@ sequenceDiagram
   participant K as KMS/Claves
   participant S as Almacén cifrado
   U->>A: Solicita acceso
-  A-->>U: MFA verificada
+  A->>U: MFA verificada
   A->>K: Solicita clave temporal
-  K-->>A: Clave efímera
+  K->>A: Clave efímera
   A->>S: Lee blob cifrado
-  S-->>A: Devuelve datos cifrados
-  A-->>U: Entrega datos descifrados
+  S->>A: Devuelve datos cifrados
+  A->>U: Entrega datos descifrados
   Note right of U: Acceso solo si permisos válidos
 ```
 
@@ -165,7 +165,7 @@ sequenceDiagram
   App->>D: Escribe registro + hash(SHA-256)
   App->>D: Lee registro
   App->>App: Verifica hash
-  App-->>App: OK = íntegro / KO = alerta
+  App->>App: OK = íntegro / KO = alerta
 ```
 
 _Verificación de integridad mediante funciones hash y auditoría._
@@ -266,11 +266,11 @@ graph LR
   U --> Supresion[Supresión]
   U --> Portabilidad
   U --> Limitacion[Limitación]
-  Acceso -.plazos y pruebas.- R[Responsable]
-  Rectificacion -.plazos y pruebas.- R
-  Supresion -.salvo obligación.- R
-  Portabilidad -.formato común.- R
-  Limitacion -.temporal.- R
+  Acceso -. plazos y pruebas .- R[Responsable]
+  Rectificacion -. plazos y pruebas .- R
+  Supresion -. salvo obligación .- R
+  Portabilidad -. formato común .- R
+  Limitacion -. temporal .- R
 ```
 
 _Derechos clave del interesado y su tramitación._
@@ -374,7 +374,7 @@ graph LR
   R[Recopilación] --> A[Almacenamiento]
   A --> U[Uso]
   U --> E[Eliminación]
-  E -.retroalimenta.- R
+  E -. retroalimenta .- R
 ```
 
 _Ciclo de vida del dato: de la captura a la eliminación._
@@ -417,7 +417,7 @@ Caso real: una linterna móvil solicitaba acceso al GPS y a contactos; tras denu
 
 ```mermaid
 graph LR
-  subgraph On‑prem
+  subgraph On-prem
     SAN[(SAN/NAS)]
   end
   subgraph Cloud
@@ -757,7 +757,7 @@ Caso real: una startup combinó copia completa semanal con diferenciales diarios
 graph TD
   D[(Datos)] --> C1[Copia 1 (local)]
   D --> C2[Copia 2 (otro soporte)]
-  D --> C3[Copia 3 (off‑site/inmutable)]
+  D --> C3[Copia 3 (off-site/inmutable)]
 ```
 
 _Estrategia 3-2-1: 3 copias, 2 soportes, 1 externa/inmutable._
@@ -774,8 +774,8 @@ sequenceDiagram
   participant B as Backup
   participant Sys as Sistema
   Op->>B: Solicita restauración de muestra
-  B-->>Sys: Restaura conjunto
-  Sys-->>Op: Valida integridad y tiempos (RTO/RPO)
+  B->>Sys: Restaura conjunto
+  Sys->>Op: Valida integridad y tiempos (RTO/RPO)
 ```
 
 _Pruebas periódicas de restauración para validar RTO/RPO._
@@ -962,7 +962,7 @@ sequenceDiagram
   A->>U: Email/SMS/llamada señuelo
   U->>A: Credenciales/OTP
   A->>S: Intenta acceso
-  S-->>A: Bloqueo si MFA resistente
+  S->>A: Bloqueo si MFA resistente
 ```
 
 _Flujo típico de phishing y mitigación con MFA resistente._
