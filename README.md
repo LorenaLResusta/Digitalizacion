@@ -75,7 +75,17 @@
 
 ### 1.1. Seguridad y privacidad en el entorno digital actual
 
-![Ilustración 1.1 Seguridad y privacidad](https://placehold.co/800x360?text=1.1+Seguridad+y+privacidad)
+```mermaid
+graph TD
+  D[Datos] -->|Proteger| S[Seguridad (CIA)]
+  D -->|Respetar| P[Privacidad (RGPD)]
+  A[Amenazas] --> D
+  C[Controles] --> S
+  L[Leyes y cumplimiento] --> P
+  S -.soporta.-> P
+```
+
+_Relación entre datos, seguridad (CIA), privacidad (RGPD), amenazas y controles._
 
 En la sociedad contemporánea, la información se ha consolidado como uno de los activos estratégicos más valiosos tanto para individuos como para organizaciones. La progresiva digitalización de la economía, la administración pública y la vida cotidiana ha transformado la manera en que se producen, almacenan, transmiten y consumen datos. Hoy en día, procesos tan sensibles como la gestión financiera, la historia clínica electrónica, las transacciones de comercio electrónico o el control de infraestructuras críticas dependen de sistemas informáticos interconectados.
 
@@ -101,7 +111,17 @@ Caso real: durante la pandemia, varios hospitales sufrieron ataques de ransomwar
 
 ### 1.2. La seguridad de la información
 
-![Ilustración 1.2 Seguridad de la información](https://placehold.co/800x360?text=1.2+Seguridad+de+la+informacion)
+```mermaid
+graph TD
+  I[Información] --- C1[Confidencialidad]
+  I --- I1[Integridad]
+  I --- D1[Disponibilidad]
+  C1 -->|Cifrado · Accesos| M1[Medidas]
+  I1 -->|Hash · Firmas| M2[Medidas]
+  D1 -->|Redundancia · DRP| M3[Medidas]
+```
+
+_Triada CIA aplicada a la información y ejemplos de controles._
 
 La seguridad de la información se define como el conjunto de medidas técnicas, organizativas, físicas y administrativas diseñadas para proteger la información y los sistemas que la procesan frente a amenazas intencionadas (ataques) o accidentales (fallos humanos, errores técnicos, desastres naturales).
 
@@ -109,7 +129,23 @@ Su núcleo conceptual descansa en la triada CIA:
 
 #### 1.2.1. Confidencialidad
 
-![Ilustración 1.2.1 Confidencialidad](https://placehold.co/800x360?text=1.2.1+Confidencialidad)
+```mermaid
+sequenceDiagram
+  participant U as Usuario
+  participant A as Control de acceso
+  participant K as KMS/Claves
+  participant S as Almacén cifrado
+  U->>A: Solicita acceso
+  A-->>U: MFA verificada
+  A->>K: Solicita clave temporal
+  K-->>A: Clave efímera
+  A->>S: Lee blob cifrado
+  S-->>A: Devuelve datos cifrados
+  A-->>U: Entrega datos descifrados
+  Note right of U: Acceso solo si permisos válidos
+```
+
+_Flujo de acceso confidencial con MFA, gestión de claves y cifrado._
 
 - Garantiza que los datos solo puedan ser accedidos por personas o sistemas autorizados. La confidencialidad se logra mediante:
 - Cifrado de la información (AES, RSA).
@@ -122,7 +158,17 @@ Caso real: una empresa evitó la filtración de nóminas porque los archivos est
 
 #### 1.2.2. Integridad
 
-![Ilustración 1.2.2 Integridad](https://placehold.co/800x360?text=1.2.2+Integridad)
+```mermaid
+sequenceDiagram
+  participant App
+  participant D as Datos
+  App->>D: Escribe registro + hash(SHA-256)
+  App->>D: Lee registro
+  App->>App: Verifica hash
+  App-->>App: OK = íntegro / KO = alerta
+```
+
+_Verificación de integridad mediante funciones hash y auditoría._
 
 - Asegura que la información se mantenga completa, exacta y no se modifique sin autorización. Ejemplos de mecanismos de integridad:
 - Funciones hash criptográficas (SHA-256).
@@ -135,7 +181,17 @@ Caso real: en un proceso judicial, los registros de auditoría y las huellas SHA
 
 #### 1.2.3. Disponibilidad
 
-![Ilustración 1.2.3 Disponibilidad](https://placehold.co/800x360?text=1.2.3+Disponibilidad)
+```mermaid
+graph LR
+  LB[Balanceador] --> A1[Servidor A]
+  LB --> B1[Servidor B]
+  A1 --> DBA[(Réplica A)]
+  B1 --> DBB[(Réplica B)]
+  Backup[(Backup inmutable)] -.-> DBA
+  Backup -.-> DBB
+```
+
+_Alta disponibilidad con balanceo, réplicas y copias inmutables._
 
 - Implica que los datos y servicios estén accesibles cuando los usuarios legítimos los necesiten. La disponibilidad se garantiza mediante:
 - Sistemas redundantes (RAID, servidores espejo).
@@ -161,13 +217,35 @@ La relevancia práctica de la seguridad de la información se observa en la cifr
 
 ### 1.3. La privacidad de la información
 
-![Ilustración 1.3 Privacidad de la información](https://placehold.co/800x360?text=1.3+Privacidad)
+```mermaid
+graph TD
+  U[Usuario] --> R[Responsable del tratamiento]
+  R -->|Base legal| T[Tratamiento]
+  T -->|Transparencia| Info[Información al usuario]
+  U -->|Ejercer| DR[Derechos ARSOPL]
+  subgraph RGPD
+    R
+    T
+    DR
+  end
+```
+
+_Privacidad: base legal, transparencia y ejercicio de derechos._
 
 La privacidad de la información se refiere al derecho de las personas a decidir cómo se recopilan, procesan, almacenan y comparten sus datos personales. A diferencia de la seguridad, que protege los datos frente a amenazas externas, la privacidad se centra en respetar la voluntad del titular y los límites impuestos por la legislación.
 
 #### 1.3.1. Marco legal
 
-![Ilustración 1.3.1 Marco legal](https://placehold.co/800x360?text=1.3.1+Marco+legal)
+```mermaid
+graph TD
+  RGPD[RGPD] --> P[Principios: licitud, minimización, transparencia]
+  RGPD --> O[Obligaciones: DPO, DPIA, brechas 72h]
+  LOP[LOPDGDD] --> A[Adecuación nacional]
+  CCPA --> TG[Tendencia global]
+  LGPD --> TG
+```
+
+_Marco normativo: RGPD y leyes afines y sus pilares._
 
 La privacidad está regulada por diferentes normas internacionales:
 
@@ -181,7 +259,21 @@ Caso real: la AEPD sancionó a una entidad por instalar cookies no esenciales si
 
 #### 1.3.2. Derechos de los individuos
 
-![Ilustración 1.3.2 Derechos](https://placehold.co/800x360?text=1.3.2+Derechos)
+```mermaid
+graph LR
+  U[Usuario] -->|Solicita| Acceso
+  U --> Rectificacion[Rectificación]
+  U --> Supresion[Supresión]
+  U --> Portabilidad
+  U --> Limitacion[Limitación]
+  Acceso -.plazos y pruebas.- R[Responsable]
+  Rectificacion -.plazos y pruebas.- R
+  Supresion -.salvo obligación.- R
+  Portabilidad -.formato común.- R
+  Limitacion -.temporal.- R
+```
+
+_Derechos clave del interesado y su tramitación._
 
 El RGPD reconoce derechos fundamentales, entre ellos:
 
@@ -197,7 +289,15 @@ Caso real: un usuario ejerció el derecho al olvido para que buscadores retirara
 
 #### 1.3.3. Diferencias entre seguridad y privacidad
 
-![Ilustración 1.3.3 Seguridad vs Privacidad](https://placehold.co/800x360?text=1.3.3+Seguridad+vs+Privacidad)
+```mermaid
+graph TD
+  S[Seguridad] --> Protege[Evita accesos/alteraciones]
+  P[Privacidad] --> Limita[Define límites y finalidades]
+  Protege --> Datos[(Datos)]
+  Limita --> Datos
+```
+
+_Seguridad y privacidad: enfoques complementarios sobre los datos._
 
 - Seguridad: busca evitar accesos no autorizados, proteger datos frente a amenazas y garantizar su disponibilidad.
 - Privacidad: garantiza que los datos se recojan y usen solo con fines legítimos y autorizados.
@@ -210,7 +310,16 @@ Caso real: una app con fuerte cifrado (seguridad) compartía datos de uso con te
 
 #### 1.3.4. Relevancia en la era digital
 
-![Ilustración 1.3.4 Relevancia](https://placehold.co/800x360?text=1.3.4+Relevancia)
+```mermaid
+graph TD
+  RS[Redes sociales] --> Datos
+  Apps[Apps móviles] --> Datos
+  IoT --> Datos
+  eCom[E-commerce] --> Datos
+  Datos --> Riesgos[Sesgos · uso indebido · brechas]
+```
+
+_Generación masiva de datos y riesgos asociados en la era digital._
 
 La privacidad adquiere un papel crucial en un mundo en el que cada interacción digital genera datos:
 
@@ -260,11 +369,30 @@ El tratamiento de la información hace referencia a todas las operaciones y proc
 
 ### 2.1. Ciclo de vida de la información
 
-![Ilustración 2.1 Ciclo de vida](https://placehold.co/800x360?text=2.1+Ciclo+de+vida)
+```mermaid
+graph LR
+  R[Recopilación] --> A[Almacenamiento]
+  A --> U[Uso]
+  U --> E[Eliminación]
+  E -.retroalimenta.- R
+```
+
+_Ciclo de vida del dato: de la captura a la eliminación._
 
 #### 2.1.1. Recopilación
 
-![Ilustración 2.1.1 Recopilación](https://placehold.co/800x360?text=2.1.1+Recopilacion)
+```mermaid
+graph TD
+  F[Formularios]
+  S[Sensores/IoT]
+  T[Telemetría]
+  F --> BL[Base legal/Consentimiento]
+  S --> BL
+  T --> BL
+  BL --> Ingreso[Ingreso al sistema]
+```
+
+_Fuentes de datos y necesidad de base jurídica/consentimiento._
 
 La recopilación es el punto de entrada de los datos en el sistema. Puede hacerse de forma explícita (cuando el usuario entrega voluntariamente información) o implícita (cuando los sistemas la obtienen automáticamente).
 
@@ -287,7 +415,22 @@ Caso real: una linterna móvil solicitaba acceso al GPS y a contactos; tras denu
 
 #### 2.1.2. Almacenamiento
 
-![Ilustración 2.1.2 Almacenamiento](https://placehold.co/800x360?text=2.1.2+Almacenamiento)
+```mermaid
+graph LR
+  subgraph On‑prem
+    SAN[(SAN/NAS)]
+  end
+  subgraph Cloud
+    S3[(Objeto)]
+    DB[(Base de datos)]
+  end
+  SAN --> Cif[Cifrado en reposo]
+  S3 --> Cif
+  DB --> Cif
+  Cif --> RBAC[Acceso RBAC/ABAC]
+```
+
+_Opciones de almacenamiento y controles: cifrado y control de acceso._
 
 Una vez recopilados, los datos se conservan en distintos soportes: bases de datos relacionales, servidores en la nube, discos duros físicos o incluso archivos en papel.
 
@@ -311,7 +454,16 @@ Caso real: un bucket en la nube mal configurado expuso bases de datos de cliente
 
 #### 2.1.3. Uso
 
-![Ilustración 2.1.3 Uso](https://placehold.co/800x360?text=2.1.3+Uso)
+```mermaid
+graph TD
+  Datos --> ETL[Curación/ETL]
+  ETL --> ML[Analítica/ML]
+  ML --> Dec[Decisiones]
+  Datos -.-> PP[Privacidad: seudo/anonimización]
+  Dec --> Log[Auditoría y trazabilidad]
+```
+
+_Uso legítimo: calidad de datos, analítica y privacidad preservadora._
 
 El uso implica que los datos se procesen con una finalidad legítima y transparente, previamente informada al titular.
 
@@ -336,7 +488,14 @@ Caso real: el caso Cambridge Analytica evidenció cómo datos recogidos para fin
 
 #### 2.1.4. Eliminación
 
-![Ilustración 2.1.4 Eliminación](https://placehold.co/800x360?text=2.1.4+Eliminacion)
+```mermaid
+graph TD
+  Ret[Retención] --> Borrado[Borrado/Anonimización]
+  Borrado --> Verif[Verificación]
+  Verif --> Cert[Certificado/Logs]
+```
+
+_Eliminación segura con verificación y evidencia._
 
 Cuando los datos dejan de ser necesarios, deben ser suprimidos o anonimizados de forma segura, respetando los plazos legales.
 La eliminación eficaz se asienta en calendarios de retención definidos por tipología de dato y obligación normativa (fiscal, laboral, sanitaria, sectorial). Estos calendarios deben equilibrar las necesidades operativas con los principios de minimización y almacenamiento limitado, evitando la conservación indefinida por inercia. Las organizaciones han de contemplar situaciones de legal hold, en las que la supresión se suspende temporalmente por requerimientos judiciales o de investigación. Desde un enfoque sistémico, es fundamental identificar todas las copias y proyecciones de un dato a lo largo del ecosistema (respaldos, cachés, índices de búsqueda, entornos de pruebas) para asegurar la coherencia de la supresión.
@@ -365,7 +524,15 @@ Caso real: tras un incidente en su proveedor cloud, una clínica notificó en 72
 
 ### 2.2. Clasificación de la información
 
-![Ilustración 2.2 Clasificación](https://placehold.co/800x360?text=2.2+Clasificacion)
+```mermaid
+graph TD
+  Pub[Pública] --> Controles1[Controles básicos]
+  Int[Interna] --> Controles2[Acceso interno]
+  Conf[Confidencial] --> Controles3[Cifrado · DLP · Need-to-know]
+  Rest[Restringida] --> Controles4[Aislamiento · Monitoreo reforzado]
+```
+
+_Niveles de clasificación y ejemplos de controles asociados._
 
 La clasificación de la información consiste en asignar niveles de protección en función de la sensibilidad, el valor y el riesgo que supone su exposición.
 
@@ -406,7 +573,29 @@ Caso real: el incidente de Sony Pictures demostró cómo tratar como interna inf
 
 ### 2.3. Protección de la información
 
-![Ilustración 2.3 Protección](https://placehold.co/800x360?text=2.3+Proteccion)
+```mermaid
+graph LR
+  subgraph Red
+    Seg[Seg. perimetral]
+    Micro[Microsegmentación]
+  end
+  subgraph Identidad
+    IAM[IAM + MFA]
+  end
+  subgraph Dispositivos
+    EDR[EDR/Allowlisting]
+  end
+  subgraph Aplicaciones
+    SDLC[Hardening · pruebas]
+  end
+  subgraph Datos
+    ENC[Cifrado · KMS]
+    DLP[DLP]
+  end
+  Seg --> Micro --> IAM --> EDR --> SDLC --> ENC --> DLP
+```
+
+_Defensa en profundidad por capas y Zero Trust._
 
 Para proteger bien la información, piensa en un castillo: no basta con una muralla, hacen falta varias. A eso lo llamamos defensa en profundidad: colocar diferentes barreras en puntos distintos del sistema para que, si una falla, otra detenga o retrase al atacante. En la práctica, combinamos medidas para prevenir incidentes, detectar rápidamente lo anómalo y responder y recuperarnos con eficacia. Más capas implican más dificultad para el adversario y más tiempo para que tú puedas reaccionar.
 
@@ -470,7 +659,19 @@ Caso real: después de WannaCry, hospitales implantaron segmentación de red, pa
 
 ### Importancia del almacenamiento seguro
 
-![Ilustración 3 Importancia del almacenamiento](https://placehold.co/800x360?text=3+Almacenamiento+seguro)
+```mermaid
+graph TD
+  Obj[Objetivos] --> Int[Integridad]
+  Obj --> Disp[Disponibilidad]
+  Obj --> Cum[Cumplimiento]
+  Obj --> Res[Resiliencia]
+  Int --> Hash[Hash · firmas]
+  Disp --> HA[HA · Réplicas]
+  Cum --> Ret[Retención]
+  Res --> DRP[Backups · DRP]
+```
+
+_Objetivos del almacenamiento seguro y controles asociados._
 
 El almacenamiento de la información constituye una de las funciones críticas en la gestión de datos. No se trata únicamente de guardar archivos en un soporte físico o en la nube, sino de garantizar que los datos permanezcan íntegros, disponibles y protegidos frente a pérdidas accidentales, accesos no autorizados o desastres imprevistos.
 
@@ -487,13 +688,25 @@ Caso real: tras un incendio en una oficina, una pyme restauró sus sistemas en 2
 
 ### 3.1. Copias de seguridad
 
-![Ilustración 3.1 Copias de seguridad](https://placehold.co/800x360?text=3.1+Copias+de+seguridad)
+```mermaid
+graph LR
+  C[Completa semanal] --> D[Diferenciales diarias]
+  D --> I[Incrementales frecuentes]
+  I --> Test[Pruebas de restauración]
+```
+
+_Combinación de tipos de copia y validación periódica._
 
 Las copias de seguridad (backups) son la herramienta más efectiva para garantizar la continuidad del negocio y la recuperación de la información tras un incidente. Representan la última línea de defensa frente a ataques como el ransomware o a fallos de hardware.
 
 #### Copia completa
 
-![Ilustración Copia completa](https://placehold.co/800x360?text=Copia+completa)
+```mermaid
+graph TD
+  Datos -->|Semana| CopiaCompleta[(Copia completa)]
+```
+
+_Copia íntegra periódica de todos los datos._
 
 - Réplica íntegra de todos los datos seleccionados.
 - Ventajas: recuperación rápida y sencilla.
@@ -506,7 +719,12 @@ Caso real: un despacho legal recuperó rápidamente expedientes tras un ransomwa
 
 #### Copia incremental
 
-![Ilustración Copia incremental](https://placehold.co/800x360?text=Copia+incremental)
+```mermaid
+graph TD
+  Cambios -->|Tras última copia| Incremental[(Incremental)]
+```
+
+_Solo cambios desde la copia previa (completa o incremental)._
 
 - Solo almacena los cambios desde la última copia (completa o incremental).
 - Ventajas: ahorro de espacio y tiempo.
@@ -518,7 +736,12 @@ Caso real: un e-commerce minimizó el tiempo de copia diaria usando incrementale
 
 #### Copia diferencial
 
-![Ilustración Copia diferencial](https://placehold.co/800x360?text=Copia+diferencial)
+```mermaid
+graph TD
+  Cambios -->|Desde última completa| Diferencial[(Diferencial)]
+```
+
+_Todos los cambios desde la última completa._
 
 - Guarda todos los cambios desde la última copia completa.
 - Ventajas: equilibrio entre rapidez y espacio.
@@ -530,7 +753,14 @@ Caso real: una startup combinó copia completa semanal con diferenciales diarios
 
 #### Estrategia 3-2-1
 
-![Ilustración Estrategia 3-2-1](https://placehold.co/800x360?text=Estrategia+3-2-1)
+```mermaid
+graph TD
+  D[(Datos)] --> C1[Copia 1 (local)]
+  D --> C2[Copia 2 (otro soporte)]
+  D --> C3[Copia 3 (off‑site/inmutable)]
+```
+
+_Estrategia 3-2-1: 3 copias, 2 soportes, 1 externa/inmutable._
 
 - 3 copias de los datos importantes.
 - 2 soportes diferentes (por ejemplo, disco local y almacenamiento en la nube).
@@ -538,7 +768,17 @@ Caso real: una startup combinó copia completa semanal con diferenciales diarios
 
 #### Pruebas periódicas
 
-![Ilustración Pruebas de restauración](https://placehold.co/800x360?text=Pruebas+periodicas)
+```mermaid
+sequenceDiagram
+  participant Op as Operaciones
+  participant B as Backup
+  participant Sys as Sistema
+  Op->>B: Solicita restauración de muestra
+  B-->>Sys: Restaura conjunto
+  Sys-->>Op: Valida integridad y tiempos (RTO/RPO)
+```
+
+_Pruebas periódicas de restauración para validar RTO/RPO._
 
 Práctica recomendada: realizar pruebas de restauración periódicas para validar integridad y tiempos de recuperación (RTO).
 
@@ -548,7 +788,15 @@ Caso real: una empresa descubrió que su proveedor de backup no guardaba metadat
 
 ### 3.2. Borrado seguro de la información
 
-![Ilustración 3.2 Borrado seguro](https://placehold.co/800x360?text=3.2+Borrado+seguro)
+```mermaid
+graph TD
+  Fin[Fin de retención] --> Metodo{Soporte}
+  Metodo -->|HDD| SOB[Sobrescritura]
+  Metodo -->|Magnético| DEG[Degaussing]
+  Metodo -->|Alta sensibilidad| DES[Destrucción física]
+```
+
+_Selección de método de borrado según soporte y sensibilidad._
 
 Borrar un archivo no implica eliminarlo definitivamente: normalmente desaparece la referencia del sistema, pero los datos siguen en el soporte hasta que se sobrescriben.
 
@@ -558,23 +806,53 @@ Caso real: equipos subastados por una organización conservaban archivos borrado
 
 #### 3.2.1. Métodos de borrado seguro
 
-![Ilustración Métodos de borrado](https://placehold.co/800x360?text=Metodos+borrado)
+```mermaid
+graph LR
+  SOB[Sobrescritura] --> Reutilizar[Reutilización del activo]
+  DEG[Degaussing] --> Retirar[Retirada del soporte]
+  DES[Destrucción física] --> Eliminacion[Eliminación definitiva]
+```
+
+_Efecto esperado de cada método de sanitización._
 
 ##### Sobrescritura
 
-![Ilustración Sobrescritura](https://placehold.co/800x360?text=Sobrescritura)
+```mermaid
+sequenceDiagram
+  participant Tool as Herramienta
+  participant Disk as Disco
+  Tool->>Disk: Pasa 1 (aleatorio)
+  Tool->>Disk: Pasa 2 (0x00)
+  Tool->>Disk: Pasa 3 (0xFF)
+  Note right of Disk: Verificación de escritura
+```
+
+_Proceso de sobrescritura con múltiples pasadas y verificación._
 
 - Reescritura de los sectores con patrones aleatorios o específicos (varias pasadas incrementan la dificultad de recuperación forense).
 
 ##### Degradación magnética (degaussing)
 
-![Ilustración Degaussing](https://placehold.co/800x360?text=Degaussing)
+```mermaid
+graph TD
+  Campo[Campo magnético intenso] --> HDD[HDD/Cintas]
+  HDD --> Inutil[Inutilización del soporte]
+```
+
+_Degradación magnética de soportes magnéticos._
 
 - Aplicación de un campo magnético intenso que inutiliza soportes magnéticos (HDD, cintas). Destruye el soporte.
 
 ##### Destrucción física
 
-![Ilustración Destrucción física](https://placehold.co/800x360?text=Destruccion+fisica)
+```mermaid
+graph TD
+  Soporte --> Trituracion[Trituración]
+  Soporte --> Pulverizacion[Pulverización]
+  Soporte --> Incineracion[Incineración]
+```
+
+_Destrucción física para información altamente sensible._
 
 - Trituración, pulverización o incineración. Método definitivo para información altamente sensible.
 
@@ -584,7 +862,13 @@ Caso real: una administración destruyó físicamente discos con información cl
 
 #### 3.2.2. Importancia del borrado seguro
 
-![Ilustración Importancia del borrado](https://placehold.co/800x360?text=Importancia+borrado)
+```mermaid
+graph LR
+  Fuga[Fuga por reciclaje] --> Sancion[Sanciones RGPD]
+  Sancion --> Mejora[Política de borrado certificado]
+```
+
+_Riesgos por borrado inadecuado y mitigaciones._
 
 - Prevención de fugas: muchos incidentes surgen al vender o reciclar equipos sin borrado adecuado.
 - Cumplimiento normativo: el RGPD exige la supresión efectiva de datos personales cuando dejan de ser necesarios.
@@ -627,7 +911,14 @@ Caso real: una cadena minorista fue multada tras vender TPVs con datos de client
 
 ### 4.1. Panorama actual
 
-![Ilustración 4.1 Panorama](https://placehold.co/800x360?text=4.1+Panorama)
+```mermaid
+graph TD
+  Volumen[Volumen de ataques] --> Riesgo[Mayor riesgo]
+  Sof[Sofisticación (IA, polimórfico)] --> Riesgo
+  Impacto[Impacto económico/reputacional] --> Decisiones[Inversión en seguridad]
+```
+
+_Factores del panorama actual de amenazas._
 
 - Mayor volumen: cada minuto se registran millones de intentos de intrusión.
 - Más sofisticación: uso de IA, ingeniería social avanzada y malware polimórfico.
@@ -640,7 +931,15 @@ Caso real: múltiples hospitales europeos reportaron en 2020-2022 interrupciones
 
 ### 4.2. Objetivos de los atacantes
 
-![Ilustración 4.2 Objetivos](https://placehold.co/800x360?text=4.2+Objetivos)
+```mermaid
+graph TD
+  Att[Atacante] --> Robo[Robo de información]
+  Att --> Ext[Extorsión (ransomware)]
+  Att --> DD[DDoS]
+  Att --> Supl[Suplantación]
+```
+
+_Objetivos frecuentes de los atacantes._
 
 - Robo de información: datos financieros, credenciales, secretos industriales.
 - Extorsión económica: ransomware que bloquea sistemas hasta el pago de un rescate.
@@ -655,7 +954,18 @@ Caso real: un banco sufrió un DDoS que dejó inoperativa su web durante horas; 
 
 ### 4.3. Phishing
 
-![Ilustración 4.3 Phishing](https://placehold.co/800x360?text=4.3+Phishing)
+```mermaid
+sequenceDiagram
+  participant A as Atacante
+  participant U as Usuario
+  participant S as Servicio legítimo
+  A->>U: Email/SMS/llamada señuelo
+  U->>A: Credenciales/OTP
+  A->>S: Intenta acceso
+  S-->>A: Bloqueo si MFA resistente
+```
+
+_Flujo típico de phishing y mitigación con MFA resistente._
 
 El phishing consiste en suplantar identidad para engañar al usuario y obtener información confidencial.
 
@@ -687,13 +997,30 @@ Caso real: una pyme evitó pérdidas cuando un empleado detectó un dominio fals
 
 ### 4.4. Malware
 
-![Ilustración 4.4 Malware](https://placehold.co/800x360?text=4.4+Malware)
+```mermaid
+graph LR
+  Malware --> Virus
+  Malware --> Ransomware
+  Malware --> Spyware
+  Malware --> Troyanos
+  Malware --> Gusanos
+```
+
+_Principales tipos de malware._
 
 El término malware abarca cualquier programa diseñado para infiltrarse o dañar un sistema.
 
 #### Tipos principales
 
-![Ilustración Tipos de malware](https://placehold.co/800x360?text=Tipos+de+malware)
+```mermaid
+graph TD
+  Descargas --> Infeccion[Infección]
+  Adjuntos --> Infeccion
+  WebComp[Web comprometida] --> Infeccion
+  Infeccion --> Deteccion[Detección y respuesta]
+```
+
+_Vectores de infección y respuesta._
 
 - Virus: se adjuntan a archivos y se ejecutan al abrirlos.
 - Ransomware: bloquea datos y exige un rescate.
@@ -747,7 +1074,15 @@ Caso real: una administración pública contuvo un brote de malware gracias a li
 
 ### 5.1. La importancia de las contraseñas
 
-[Contenido pendiente]
+```mermaid
+graph TD
+  Len[Longitud] --> Ent[Entropía]
+  Comp[Complejidad] --> Ent
+  Uniq[Unicidad] --> Riesgo[Menor impacto en brechas]
+  Gest[Gestor de contraseñas] --> Uniq
+```
+
+_Factores que aumentan la entropía y reducen el riesgo._
 
 - Una **contraseña** robusta debe combinar **longitud** (preferiblemente ≥ **14** caracteres) y **complejidad** (mezcla de letras, números y símbolos) o, mejor aún, una **passphrase** formada por varias palabras aleatorias.
 - La **entropía** efectiva aumenta más por la longitud que por símbolos exóticos; prioriza frases largas y únicas frente a patrones predecibles.
@@ -761,7 +1096,15 @@ Caso real: una brecha expuso contraseñas reutilizadas; usuarios que repetían l
 
 ### 5.2. Buenas prácticas en la gestión de contraseñas
 
-[Contenido pendiente]
+```mermaid
+graph LR
+  MFA --> Reduccion[Reducción de accesos indebidos]
+  Auditoria[Auditoría de bóveda] --> Higiene
+  Listas[Bloqueo de contraseñas comunes] --> Higiene
+  Higiene --> Reduccion
+```
+
+_Buenas prácticas que elevan la higiene de credenciales y reducen ataques._
 
 - Habilita **MFA** siempre que sea posible; prioriza métodos **resistentes al phishing** (por ejemplo, **FIDO2/WebAuthn** con llaves de seguridad).
 - Usa un **gestor de contraseñas** con sincronización segura, **cifrado** de bóveda y opción de **auditoría** (detección de contraseñas débiles/repetidas).
@@ -778,7 +1121,15 @@ Caso real: tras implementar MFA y un gestor corporativo, una empresa redujo en 9
 
 #### Factores de autenticación
 
-[Contenido pendiente]
+```mermaid
+graph TD
+  Sabes[Algo que sabes] --> Riesgos1[Phishing · fuerza bruta]
+  Tienes[Algo que tienes] --> Riesgos2[Pérdida · SIM swapping]
+  Eres[Algo que eres] --> Riesgos3[Privacidad · revocación]
+  FIDO2[Factor FIDO2/WebAuthn] --> Alta[Alta resistencia al phishing]
+```
+
+_Comparativa de factores y fortaleza frente a phishing._
 
 - **Algo que sabes**: contraseña o **PIN**; vulnerable a **phishing** y **shoulder surfing**.
 - **Algo que tienes**: **token hardware** (FIDO2), app **TOTP** o **push**; los SMS son más débiles por **SIM swapping**.
@@ -818,7 +1169,15 @@ Caso real: un ataque de phishing obtuvo la contraseña de un directivo, pero el 
 
 [Contenido pendiente]
 
-![Ilustración 6.1 Protección física](https://placehold.co/800x360?text=6.1+Proteccion+fisica)
+```mermaid
+graph TD
+  Accesos[Control de accesos] --> Puertas[Cerraduras/Badges]
+  Vigilancia[Vigilancia/CCTV] --> Deteccion[Detección]
+  Proteccion[Protecciones físicas] --> Cables[Cableado seguro]
+  Proteccion --> Pantallas[Pantallas de privacidad]
+```
+
+_Controles físicos típicos para el puesto y la sala._
 
 Conceptos clave: **control de accesos**, **cableado seguro**, **pantallas de privacidad**, **limpieza de mesa**.
 
@@ -830,7 +1189,16 @@ Caso real: la pérdida de un portátil sin cifrar provocó una fuga de datos; la
 
 [Contenido pendiente]
 
-![Ilustración 6.2 Protección lógica](https://placehold.co/800x360?text=6.2+Proteccion+logica)
+```mermaid
+graph LR
+  Antimal[Antimalware] --> Defensa
+  Parches[Parches] --> Defensa
+  Cifrado[Cifrado de disco] --> Defensa
+  Minimo[Minimo privilegio] --> Defensa
+  Defensa --> Reduccion[Reducción de superficie de ataque]
+```
+
+_Capas lógicas de protección en el endpoint._
 
 Conceptos clave: **antimalware**, **parcheo**, **cifrado**, **principio de mínimo privilegio**.
 
