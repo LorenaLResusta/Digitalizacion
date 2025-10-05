@@ -4,6 +4,7 @@
 
 - [Unidad 6 Ciberseguridad](#unidad-6-ciberseguridad)
   - [Índice](#índice)
+  - [Mapa mental global](#mapa-mental-global)
   - [1. Seguridad y Privacidad de la Información](#1-seguridad-y-privacidad-de-la-información)
     - [1.1. Seguridad y privacidad en el entorno digital actual](#11-seguridad-y-privacidad-en-el-entorno-digital-actual)
     - [1.2. La seguridad de la información](#12-la-seguridad-de-la-información)
@@ -39,7 +40,6 @@
       - [Pruebas periódicas](#pruebas-periódicas)
     - [3.2. Borrado seguro de la información](#32-borrado-seguro-de-la-información)
       - [3.2.1. Métodos de borrado seguro](#321-métodos-de-borrado-seguro)
-        - [Sobrescritura](#sobrescritura)
         - [Degradación magnética (degaussing)](#degradación-magnética-degaussing)
         - [Destrucción física](#destrucción-física)
       - [3.2.2. Importancia del borrado seguro](#322-importancia-del-borrado-seguro)
@@ -71,18 +71,27 @@
 
 ---
 
+## Mapa mental global
+
+![Mapa mental global del tema](./Tema%206%20Mapa%20mental.png)
+
+_Mapa mental general de la unidad para una visión rápida de los bloques y relaciones._
+
+---
+
 ## 1. Seguridad y Privacidad de la Información
 
 ### 1.1. Seguridad y privacidad en el entorno digital actual
 
 ```mermaid
-graph TD
-  D[Datos] -->|Proteger| S[Seguridad (CIA)]
-  D -->|Respetar| P[Privacidad (RGPD)]
+flowchart TD
+  D[Datos] -->|Proteger| S[Seguridad CIA]
+  D -->|Respetar| P[Privacidad RGPD]
   A[Amenazas] --> D
   C[Controles] --> S
   L[Leyes y cumplimiento] --> P
-  S -.-> P
+  S --> P
+
 ```
 
 _Relación entre datos, seguridad (CIA), privacidad (RGPD), amenazas y controles._
@@ -112,13 +121,13 @@ Caso real: durante la pandemia, varios hospitales sufrieron ataques de ransomwar
 ### 1.2. La seguridad de la información
 
 ```mermaid
-graph TD
-  I[Información] --- C1[Confidencialidad]
+flowchart TD
+  I[Informacion] --- C1[Confidencialidad]
   I --- I1[Integridad]
   I --- D1[Disponibilidad]
-  C1 -->|Cifrado · Accesos| M1[Medidas]
-  I1 -->|Hash · Firmas| M2[Medidas]
-  D1 -->|Redundancia · DRP| M3[Medidas]
+  C1 -->|Cifrado y accesos| M1[Medidas]
+  I1 -->|Hash y firmas| M2[Medidas]
+  D1 -->|Redundancia y DRP| M3[Medidas]
 ```
 
 _Triada CIA aplicada a la información y ejemplos de controles._
@@ -182,13 +191,13 @@ Caso real: en un proceso judicial, los registros de auditoría y las huellas SHA
 #### 1.2.3. Disponibilidad
 
 ```mermaid
-graph LR
+flowchart LR
   LB[Balanceador] --> A1[Servidor A]
   LB --> B1[Servidor B]
-  A1 --> DBA[(Réplica A)]
-  B1 --> DBB[(Réplica B)]
-  Backup[(Backup inmutable)] -.-> DBA
-  Backup -.-> DBB
+  A1 --> DBA[(Replica A)]
+  B1 --> DBB[(Replica B)]
+  Backup[(Backup inmutable)] --> DBA
+  Backup --> DBB
 ```
 
 _Alta disponibilidad con balanceo, réplicas y copias inmutables._
@@ -260,17 +269,17 @@ Caso real: la AEPD sancionó a una entidad por instalar cookies no esenciales si
 #### 1.3.2. Derechos de los individuos
 
 ```mermaid
-graph LR
+flowchart LR
   U[Usuario] -->|Solicita| Acceso
-  U --> Rectificacion[Rectificación]
-  U --> Supresion[Supresión]
+  U --> Rectificacion[Rectificacion]
+  U --> Supresion[Supresion]
   U --> Portabilidad
-  U --> Limitacion[Limitación]
-  Acceso -.-> R[Responsable]
-  Rectificacion -.-> R
-  Supresion -.-> R
-  Portabilidad -.-> R
-  Limitacion -.-> R
+  U --> Limitacion[Limitacion]
+  Acceso --> R[Responsable]
+  Rectificacion --> R
+  Supresion --> R
+  Portabilidad --> R
+  Limitacion --> R
 ```
 
 _Derechos clave del interesado y su tramitación._
@@ -370,11 +379,11 @@ El tratamiento de la información hace referencia a todas las operaciones y proc
 ### 2.1. Ciclo de vida de la información
 
 ```mermaid
-graph LR
-  R[Recopilación] --> A[Almacenamiento]
+flowchart LR
+  R[Recopilacion] --> A[Almacenamiento]
   A --> U[Uso]
-  U --> E[Eliminación]
-  E -.-> R
+  U --> E[Eliminacion]
+  E --> R
 ```
 
 _Ciclo de vida del dato: de la captura a la eliminación._
@@ -455,12 +464,12 @@ Caso real: un bucket en la nube mal configurado expuso bases de datos de cliente
 #### 2.1.3. Uso
 
 ```mermaid
-graph TD
-  Datos --> ETL[Curación/ETL]
-  ETL --> ML[Analítica/ML]
+flowchart TD
+  Datos --> ETL[Curacion ETL]
+  ETL --> ML[Analitica ML]
   ML --> Dec[Decisiones]
-  Datos -.-> PP[Privacidad: seudo/anonimización]
-  Dec --> Log[Auditoría y trazabilidad]
+  Datos --> PP[Privacidad seudonimizacion o anonimizacion]
+  Dec --> Log[Auditoria y trazabilidad]
 ```
 
 _Uso legítimo: calidad de datos, analítica y privacidad preservadora._
@@ -808,10 +817,10 @@ Caso real: equipos subastados por una organización conservaban archivos borrado
 
 ```mermaid
 graph LR
-  SOB[Sobrescritura] --> Reutilizacion
-  DEG[Degaussing] --> Retirada
-  DES[Destrucción física] --> Eliminacion
-```
+  SOB[Sobrescritura] --> REU[Reutilización del soporte]
+  DEG[Degaussing] --> RET[Retirada del soporte]
+  DES[Destrucción física] --> ELI[Eliminación definitiva]
+
 
 _Efecto esperado de cada método de sanitización._
 
@@ -912,10 +921,11 @@ Caso real: una cadena minorista fue multada tras vender TPVs con datos de client
 ### 4.1. Panorama actual
 
 ```mermaid
-graph TD
-  Volumen[Más ataques] --> Riesgo[Mayor riesgo]
-  Sof[Sofisticación de ataques] --> Riesgo
-  Impacto[Impacto económico y reputacional] --> Decisiones[Más inversión en seguridad]
+flowchart TD
+  VOL[Mayor volumen de ataques] --> RIES[Mayor riesgo]
+  SOF[Más sofisticación de ataques] --> RIES
+  IMP[Impacto económico y reputacional] --> DEC[Más inversión en seguridad]
+
 ```
 
 _Factores del panorama actual de amenazas._
@@ -932,11 +942,11 @@ Caso real: múltiples hospitales europeos reportaron en 2020-2022 interrupciones
 ### 4.2. Objetivos de los atacantes
 
 ```mermaid
-graph TD
-  Att[Atacante] --> Robo[Robo de información]
-  Att --> Ext[Extorsión (ransomware)]
+flowchart TD
+  Att[Atacante] --> Robo[Robo de informacion]
+  Att --> Ext[Extorsion ransomware]
   Att --> DD[DDoS]
-  Att --> Supl[Suplantación]
+  Att --> Supl[Suplantacion]
 ```
 
 _Objetivos frecuentes de los atacantes._
