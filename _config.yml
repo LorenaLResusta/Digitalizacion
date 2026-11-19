@@ -1,1 +1,8 @@
 theme: jekyll-theme-minimal
+title: Digitalización aplicada a los sectores productivos
+description: Apuntes del módulo 1665 · Ciclos de Grado Superior
+lang: es
+markdown: kramdown
+kramdown:
+  toc_levels: 2..3
+  parse_block_html: true
