@@ -1,0 +1,25 @@
+baseURL = "https://lorenalresusta.github.io/Digitalizacion/"
+languageCode = "es"
+defaultContentLanguage = "es"
+title = "Digitalización aplicada a los sectores productivos"
+theme = "hugo-theme-relearn"
+
+[outputs]
+  home = ["html", "rss", "search"]
+
+[params]
+  themeVariant = ["auto", "relearn-light", "relearn-dark"]
+  collapsibleMenu = true
+  alwaysopen = false
+  showVisitedLinks = true
+  disableLandingPageButton = true
+  disableGeneratorVersion = true
+  editURL = "https://github.com/LorenaLResusta/Digitalizacion/edit/main/content/${FilePath}"
+  author.name = "Lorena L. Resusta"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.tableOfContents]
+  startLevel = 2
+  endLevel = 3
