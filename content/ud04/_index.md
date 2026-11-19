@@ -9,7 +9,7 @@ weight = 4
 
 **RA4.** Identifica aplicaciones de la inteligencia artificial (IA) en el sector y describe las mejoras que aporta su implementación.
 
-{{% expand title="Criterios de evaluación y contenidos de la unidad" %}}
+{{% details title="Criterios de evaluación y contenidos de la unidad" %}}
 
 **Criterios de evaluación**
 
@@ -29,8 +29,8 @@ f) Se ha descrito cómo influye la IA en el sector del título.
 - Lenguajes de programación en IA.
 - Regulación y principios éticos de la IA.
 
-{{% /expand %}}
+{{% /details %}}
 
 ## Contenido de la unidad
 
-{{% children %}}
+{{% pages display="tree" %}}

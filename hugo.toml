@@ -1,11 +1,8 @@
 baseURL = "https://lorenalresusta.github.io/Digitalizacion/"
-languageCode = "es"
 defaultContentLanguage = "es"
+locale = "es-ES"
 title = "Digitalización aplicada a los sectores productivos"
 theme = "hugo-theme-relearn"
-
-[outputs]
-  home = ["html", "rss", "search"]
 
 [params]
   themeVariant = ["auto", "relearn-light", "relearn-dark"]

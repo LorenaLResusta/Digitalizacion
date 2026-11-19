@@ -9,7 +9,7 @@ weight = 2
 
 **RA2.** Caracteriza las tecnologías habilitadoras digitales (THD) necesarias para la adecuación o transformación de la empresa, relacionándolas con su ámbito de aplicación.
 
-{{% expand title="Criterios de evaluación y contenidos de la unidad" %}}
+{{% details title="Criterios de evaluación y contenidos de la unidad" %}}
 
 **Criterios de evaluación**
 
@@ -30,8 +30,8 @@ g) Se ha elaborado un informe que relaciona tecnologías, características y ár
 - Influencia de las THD en productos, servicios, nuevos mercados e internacionalización.
 - THD en planta y en negocio. Mejoras derivadas de su implantación.
 
-{{% /expand %}}
+{{% /details %}}
 
 ## Contenido de la unidad
 
-{{% children %}}
+{{% pages display="tree" %}}

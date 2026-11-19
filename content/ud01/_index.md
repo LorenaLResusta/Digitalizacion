@@ -9,7 +9,7 @@ weight = 1
 
 **RA1.** Analiza el concepto de digitalización y su repercusión en los sectores productivos, teniendo en cuenta la actividad de la empresa e identificando entornos IT (Information Technology) y OT (Operation Technology).
 
-{{% expand title="Criterios de evaluación y contenidos de la unidad" %}}
+{{% details title="Criterios de evaluación y contenidos de la unidad" %}}
 
 **Criterios de evaluación**
 
@@ -30,8 +30,8 @@ g) Se han analizado las ventajas de digitalizar una empresa de extremo a extremo
 - Entornos IT y OT: concepto, diferencias, similitudes y relación.
 - De la empresa clásica a la empresa digitalizada: ventajas.
 
-{{% /expand %}}
+{{% /details %}}
 
 ## Contenido de la unidad
 
-{{% children %}}
+{{% pages display="tree" %}}

@@ -9,7 +9,7 @@ weight = 6
 
 **RA6.** Desarrolla un proyecto de transformación digital de una empresa del sector, según sus objetivos.
 
-{{% expand title="Criterios de evaluación y contenidos de la unidad" %}}
+{{% details title="Criterios de evaluación y contenidos de la unidad" %}}
 
 **Criterios de evaluación**
 
@@ -35,8 +35,8 @@ k) Se ha considerado la idoneidad de los recursos humanos.
 - Documentos de seguimiento y medidas.
 - Recursos humanos: nuevos perfiles y formación.
 
-{{% /expand %}}
+{{% /details %}}
 
 ## Contenido de la unidad
 
-{{% children %}}
+{{% pages display="tree" %}}

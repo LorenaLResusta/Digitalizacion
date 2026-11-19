@@ -9,7 +9,7 @@ weight = 3
 
 **RA3.** Identifica sistemas basados en cloud/nube y su influencia en los sistemas digitales, describiendo sus funciones principales.
 
-{{% expand title="Criterios de evaluación y contenidos de la unidad" %}}
+{{% details title="Criterios de evaluación y contenidos de la unidad" %}}
 
 **Criterios de evaluación**
 
@@ -28,8 +28,8 @@ e) Se han identificado las ventajas de usar la cloud en sistemas conectados.
 - Ventajas de los recursos cloud: protección de datos, interoperabilidad, movilidad y trabajo cooperativo.
 - Uso de la cloud y rentabilidad empresarial.
 
-{{% /expand %}}
+{{% /details %}}
 
 ## Contenido de la unidad
 
-{{% children %}}
+{{% pages display="tree" %}}

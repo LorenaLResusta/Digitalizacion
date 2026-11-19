@@ -9,7 +9,7 @@ weight = 5
 
 **RA5.** Evalúa la importancia de los datos y su protección en una economía digital globalizada, definiendo sistemas de seguridad y ciberseguridad.
 
-{{% expand title="Criterios de evaluación y contenidos de la unidad" %}}
+{{% details title="Criterios de evaluación y contenidos de la unidad" %}}
 
 **Criterios de evaluación**
 
@@ -33,8 +33,8 @@ i) Se ha valorado la importancia de la seguridad y su regulación en relación c
 - Aplicación de la ciencia de datos en las empresas.
 - Importancia de la seguridad en el manejo de datos.
 
-{{% /expand %}}
+{{% /details %}}
 
 ## Contenido de la unidad
 
-{{% children %}}
+{{% pages display="tree" %}}
