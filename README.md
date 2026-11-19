@@ -1,5 +1,6 @@
 ---
 title: Inicio
+permalink: /
 ---
 
 # Digitalización aplicada a los sectores productivos
