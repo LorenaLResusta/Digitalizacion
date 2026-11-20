@@ -15,6 +15,6 @@ En este sentido, se han definido como prioridades estratégicas la investigació
 - Desarrollo de aplicaciones avanzadas de inteligencia artificial (IA) y aprendizaje automático (machine learning).
 - Blockchain y tecnologías de registro distribuido.
 
-El papel de la inteligencia artificial se viene considerando como prioritario por la Unión Europea, que ha definido una estrategia específica para su desarrollo y aplicación en todos los sectores productivos y sociales. En este sentido España ha definido una estrategia nacional de inteligencia artificial (ENIA) que establece las bases para el desarrollo de esta tecnología en nuestro país. ([Enia]((https://planderecuperacion.gob.es/noticias/conoce-Estrategia-Nacional-Inteligencia-Artificial-ENIA-IA-prtr) "Sitio Web ENIA")). 
+El papel de la inteligencia artificial se viene considerando como prioritario por la Unión Europea, que ha definido una estrategia específica para su desarrollo y aplicación en todos los sectores productivos y sociales. En este sentido España ha definido una estrategia nacional de inteligencia artificial (ENIA) que establece las bases para el desarrollo de esta tecnología en nuestro país. ([Enia](https://planderecuperacion.gob.es/noticias/conoce-Estrategia-Nacional-Inteligencia-Artificial-ENIA-IA-prtr "Sitio Web ENIA")). 
 
 <a id="las-thd-y-la-economia-sostenible"></a>

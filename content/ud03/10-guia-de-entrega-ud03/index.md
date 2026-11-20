@@ -25,7 +25,7 @@ Demostrar que comprendes los modelos y servicios de nube, que sabes elegir una o
   - 3 reglas de seguridad concretas y accionables.
   - Justificación breve y referencias si procede.
 
-> Nota: incluye la tabla de KPIs con fórmula, unidad, fuente y meta. Guía en el [Anexo: KPIs (Plan LARA)](../Plan tienda de moda LARA - UD01-UD02-UD03.md#anexo-kpis-definición-y-ejemplos).
+> Nota: incluye la tabla de KPIs con fórmula, unidad, fuente y meta. Guía en el [Anexo: KPIs (Plan LARA)](/proyecto-lara/01-retos-ud01-ud02-y-ud03/).
 
 **Ejemplos de evidencias por criterio:**
 
