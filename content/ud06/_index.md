@@ -1,42 +1,74 @@
 +++
-title = "UD06. Proyecto de transformación digital"
+title = "UD6. Ciberseguridad"
 weight = 6
 +++
 
-| Módulo | Resultado de aprendizaje | Duración orientativa |
-|--------|--------------------------|----------------------|
-| 1665 · Digitalización aplicada a los sectores productivos (GS) | RA6 | 4 horas |
+| Duración | Resultado de aprendizaje |
+|---|---|
+| 4 horas | **RA5.** Evalúa la importancia de los datos y su protección en la economía digital. |
 
-**RA6.** Desarrolla un proyecto de transformación digital de una empresa del sector, según sus objetivos.
+### Contenidos de la UD6
 
-{{% details title="Criterios de evaluación y contenidos de la unidad" %}}
+- Seguridad de la información, amenazas, vulnerabilidades y riesgos.
+- Protección de sistemas y datos en cloud y dispositivos.
+- Control de acceso, autenticación, MFA y cifrado.
+- Copias de seguridad, RGPD y protección de datos.
+- Seguridad en IT y OT; respuesta básica ante incidentes.
 
-**Criterios de evaluación**
+## Mapa mental global
 
-a) Se han identificado los objetivos estratégicos de la empresa.  
-b) Se han identificado y alineado las áreas de producción o negocio y de comunicaciones.  
-c) Se han identificado las áreas susceptibles de ser digitalizadas.  
-d) Se ha analizado el encaje entre las áreas digitalizadas y las no digitalizadas.  
-e) Se han considerado las necesidades presentes y futuras.  
-f) Se ha relacionado cada área con la implantación de tecnologías.  
-g) Se han analizado las posibles brechas de seguridad en cada área.  
-h) Se ha definido el tratamiento y análisis de los datos.  
-i) Se ha considerado la integración entre datos, aplicaciones y plataformas.  
-j) Se han documentado los cambios realizados según la estrategia.  
-k) Se ha considerado la idoneidad de los recursos humanos.  
+```mermaid
+flowchart TB
+  U[UD06 Ciberseguridad]
+  U --> A1[1 Seguridad y Privacidad]
+  A1 --> A1a[Seguridad CIA]
+  A1 --> A1b[Privacidad RGPD]
+  A1 --> A1c[Diferencias]
+  A1 --> A1d[Relevancia]
+  U --> A2[2 Tratamiento de la informacion]
+  A2 --> A2a[Ciclo de vida]
+  A2a --> A2a1[Recopilacion]
+  A2a --> A2a2[Almacenamiento]
+  A2a --> A2a3[Uso]
+  A2a --> A2a4[Eliminacion]
+  A2 --> A2b[Clasificacion]
+  A2b --> A2b1[Publica]
+  A2b --> A2b2[Interna]
+  A2b --> A2b3[Confidencial]
+  A2b --> A2b4[Restringida]
+  A2 --> A2c[Proteccion]
+  A2c --> A2c1[Defensa en profundidad]
+  U --> A3[3 Almacenamiento de la informacion]
+  A3 --> A3a[Importancia]
+  A3 --> A3b[Copias de seguridad]
+  A3b --> A3b1[Completa]
+  A3b --> A3b2[Incremental]
+  A3b --> A3b3[Diferencial]
+  A3b --> A3b4[Estrategia 3-2-1]
+  A3b --> A3b5[Pruebas periodicas]
+  A3 --> A3c[Borrado seguro]
+  A3c --> A3c1[Sobrescritura]
+  A3c --> A3c2[Degaussing]
+  A3c --> A3c3[Destruccion fisica]
+  U --> A4[4 Amenazas]
+  A4 --> A4a[Panorama actual]
+  A4 --> A4b[Objetivos]
+  A4 --> A4c[Phishing]
+  A4 --> A4d[Malware]
+  U --> A5[5 Contrasenas y autenticacion]
+  A5 --> A5a[Importancia]
+  A5 --> A5b[Buenas practicas]
+  A5 --> A5c[MFA]
+  U --> A6[6 Proteccion del puesto]
+  A6 --> A6a[Fisica]
+  A6 --> A6b[Logica]
+  U --> AC[Conclusiones]
+```
 
-**Contenidos**
+_Mapa mental general de la unidad (Mermaid) para una visión rápida de los bloques y relaciones._
 
-- Objetivos de la empresa y estrategia de digitalización.
-- Áreas de la empresa: alineación, subobjetivos y coste de oportunidad.
-- THD requeridas, implantación e integración.
-- Software ERP, CRM y BPM. Soluciones cloud y suites.
-- Tratamiento de datos masivos.
-- Documentos de seguimiento y medidas.
-- Recursos humanos: nuevos perfiles y formación.
+---
 
-{{% /details %}}
-
-## Contenido de la unidad
+## Apartados de la unidad
 
 {{% pages display="tree" %}}

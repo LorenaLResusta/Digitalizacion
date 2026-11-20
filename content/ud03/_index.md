@@ -1,35 +1,20 @@
 +++
-title = "UD03. Cloud y sistemas conectados"
+title = "UD3. Computación en la nube"
 weight = 3
 +++
 
-| Módulo | Resultado de aprendizaje | Duración orientativa |
-|--------|--------------------------|----------------------|
-| 1665 · Digitalización aplicada a los sectores productivos (GS) | RA3 | 6 horas |
+| Duración | Resultado de aprendizaje |
+|---|---|
+| 4 horas | **RA3.** Identifica sistemas cloud y analiza Edge Computing, Fog y Mist. |
 
-**RA3.** Identifica sistemas basados en cloud/nube y su influencia en los sistemas digitales, describiendo sus funciones principales.
+### Contenidos de la UD3
 
-{{% details title="Criterios de evaluación y contenidos de la unidad" %}}
+- Cloud computing: características, ventajas e inconvenientes.
+- Modelos de servicio: SaaS, PaaS, IaaS y FaaS.
+- Modelos de despliegue: nube pública, privada e híbrida.
+- Edge, Fog y Mist Computing; arquitecturas distribuidas.
+- Almacenamiento cloud, seguridad, copias de seguridad y alta disponibilidad.
 
-**Criterios de evaluación**
-
-a) Se han identificado los niveles de la cloud.  
-b) Se han identificado sus funciones principales: procesamiento de datos, intercambio de información, ejecución de aplicaciones, entre otras.  
-c) Se ha descrito el edge computing y su relación con la cloud.  
-d) Se han definido fog y mist computing y sus zonas de aplicación.  
-e) Se han identificado las ventajas de usar la cloud en sistemas conectados.  
-
-**Contenidos**
-
-- Cloud: definición y niveles. IaaS, PaaS y SaaS.
-- Posibilidades del trabajo en la cloud.
-- Edge computing y su relación con la cloud.
-- Fog y mist computing y su relación con la cloud.
-- Ventajas de los recursos cloud: protección de datos, interoperabilidad, movilidad y trabajo cooperativo.
-- Uso de la cloud y rentabilidad empresarial.
-
-{{% /details %}}
-
-## Contenido de la unidad
+## Apartados de la unidad
 
 {{% pages display="tree" %}}

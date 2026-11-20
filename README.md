@@ -4,16 +4,19 @@ Apuntes del módulo 1665 de los ciclos formativos de Grado Superior.
 
 **Web de la asignatura:** https://lorenalresusta.github.io/Digitalizacion/
 
-## Unidades
+## Contenido
 
-| Unidad | Carpeta |
-|--------|---------|
-| UD01. Digitalización en los sectores productivos | `content/ud01` |
-| UD02. Tecnologías habilitadoras digitales | `content/ud02` |
-| UD03. Cloud y sistemas conectados | `content/ud03` |
-| UD04. Aplicación de la inteligencia artificial | `content/ud04` |
-| UD05. Evaluación de datos | `content/ud05` |
-| UD06. Proyecto de transformación digital | `content/ud06` |
+| Sección | Carpeta |
+|---------|---------|
+| UD1. Digitalización en los sistemas productivos | `content/ud01` |
+| UD2. Caracterización de tecnologías habilitadoras | `content/ud02` |
+| UD3. Computación en la nube | `content/ud03` |
+| UD4. Inteligencia Artificial | `content/ud04` |
+| UD5. Big Data | `content/ud05` |
+| UD6. Ciberseguridad | `content/ud06` |
+| UD7. Proyecto de transformación digital | `content/ud07` |
+| Proyecto Moda Urbana LARA | `content/proyecto-lara` |
+| Guía didáctica | `content/guia-didactica` |
 
 ## Cómo editar
 

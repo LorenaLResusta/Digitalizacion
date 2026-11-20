@@ -1,37 +1,32 @@
 +++
-title = "UD01. Digitalización en los sectores productivos"
+title = "UD1. Digitalización en los sistemas productivos"
 weight = 1
 +++
 
-| Módulo | Resultado de aprendizaje | Duración orientativa |
-|--------|--------------------------|----------------------|
-| 1665 · Digitalización aplicada a los sectores productivos (GS) | RA1 | 5 horas |
+| Duración | Resultado de aprendizaje |
+|---|---|
+| 4 horas | **RA1.** Analiza la digitalización en los sectores productivos e identifica los entornos IT y OT y su relación con la organización. |
 
-**RA1.** Analiza el concepto de digitalización y su repercusión en los sectores productivos, teniendo en cuenta la actividad de la empresa e identificando entornos IT (Information Technology) y OT (Operation Technology).
+### Contenidos de la UD1
 
-{{% details title="Criterios de evaluación y contenidos de la unidad" %}}
+- Concepto de digitalización y transformación digital.
+- Digitalización frente a informatización.
+- Impacto en la empresa, plan de digitalización y digitalización de procesos.
+- Entornos IT y OT: diferencias, relación y aplicaciones.
+- ERP, CRM, ventajas y riesgos de la transformación digital.
 
-**Criterios de evaluación**
+### Actividades de la UD1
 
-a) Se ha descrito en qué consiste el concepto de digitalización.  
-b) Se ha relacionado la tecnología digital con la organización de la empresa.  
-c) Se han establecido las diferencias y similitudes entre entornos IT y OT.  
-d) Se han identificado los departamentos típicos que pueden constituir entornos IT.  
-e) Se han seleccionado tecnologías típicas de digitalización en planta y en negocio.  
-f) Se ha analizado la importancia de conectar los entornos IT y OT.  
-g) Se han analizado las ventajas de digitalizar una empresa de extremo a extremo.  
+- Cuestionario de conceptos básicos.
+- Análisis de una empresa tradicional.
+- Identificación de sistemas IT y OT.
+- Elaboración de un esquema de digitalización.
+- Actividad autoevaluable.
 
-**Contenidos**
+### Mapa de la unidad
 
-- Cronología de las revoluciones industriales. Principales elementos.
-- Cuarta revolución industrial: la digitalización y sus elementos definitorios.
-- Sistemas ciberfísicos.
-- Estructura de la empresa y digitalización de sus unidades.
-- Entornos IT y OT: concepto, diferencias, similitudes y relación.
-- De la empresa clásica a la empresa digitalizada: ventajas.
+![Mapa de la unidad](mapa.png)
 
-{{% /details %}}
-
-## Contenido de la unidad
+## Apartados de la unidad
 
 {{% pages display="tree" %}}
